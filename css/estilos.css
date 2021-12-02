@@ -31,6 +31,10 @@ li {
 	color: #D9C7E8;
 	font-size: 20px;
 }
+.conHover:hover{
+	color: #8694B1;
+	transform: scale(1.1);
+}
 .logo span {
 	font-size: 80px;
 	color: #D9C7E8;
