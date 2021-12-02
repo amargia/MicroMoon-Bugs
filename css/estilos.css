@@ -34,6 +34,7 @@ li {
 .conHover:hover{
 	color: #8694B1;
 	transform: scale(1.1);
+	transition: all 200ms ease-in-out;
 }
 .logo span {
 	font-size: 80px;
@@ -135,6 +136,7 @@ div.column {
 	font-size: 15px;
 	line-height: 20px;
 	text-align: center;
+	transition: all 300ms ease-in-out;
 }
 div.w100 {
 	width: 100%;
