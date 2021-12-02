@@ -30,11 +30,11 @@ li {
 	float: left;
 	color: #D9C7E8;
 	font-size: 20px;
+	transition: all 200ms ease-in-out;
 }
 .conHover:hover{
 	color: #8694B1;
 	transform: scale(1.1);
-	transition: all 200ms ease-in-out;
 }
 .logo span {
 	font-size: 80px;
