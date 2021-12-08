@@ -1,10 +1,13 @@
-/*universal*/
 body	{
 	background-color: #242434;
 	font-family: 'Cultive Mono', monospace;
+	min-height: 100vh;
 }
 div	{
 	color: #6C7C9C;
+}
+.navbarBg {
+	background-color: #5A4669;
 }
 .conHover:hover{
 	color: #6C7C9C;
@@ -14,8 +17,15 @@ div	{
 h1 {
 	color: #D9C7E8;
 }
+h2 {
+	color: #D9C7E8;
+}
 h3 {
 	color: #D9C7E8;
+}
+div.dashed {
+	border-style: dashed;
+	border-color: #D9C7E8;
 }
 a {
 	text-decoration: none;
