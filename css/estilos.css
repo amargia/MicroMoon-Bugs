@@ -1,7 +1,6 @@
 body	{
 	background-color: #242434;
 	font-family: 'Cultive Mono', monospace;
-	min-height: 100vh;
 }
 div	{
 	color: #6C7C9C;
@@ -14,14 +13,23 @@ div	{
 	transform: scale(1.1);
 	transition: all 200ms ease-in-out;
 }
-h1 {
-	color: #D9C7E8;
+a.nav-link {
+	font-size: 12px;
 }
-h2 {
+.logo {
 	color: #D9C7E8;
+	font-size: 45px;
 }
-h3 {
+.title {
 	color: #D9C7E8;
+	font-size: 22px;
+}
+.subtitle {
+	color: #6C7C9C;
+	font-size: 12px;
+}
+span.name {
+	font-size: 12px;
 }
 div.dashed {
 	border-style: dashed;
@@ -29,4 +37,47 @@ div.dashed {
 }
 a {
 	text-decoration: none;
+}
+.footer {
+	font-size: 10px;
+}
+@media all and (min-width: 768px) and (max-width: 1024px){
+	a.nav-link {
+		font-size: 14px;
+ 	}
+ 	.logo {
+		font-size: 65px;
+	}
+	.title {
+		font-size: 28px;
+	}
+	.subtitle {
+		font-size: 16px;
+	}
+	span.name {
+		font-size: 14px;
+	}
+	.footer {
+		font-size: 12px;
+	}
+}
+@media all and (min-width: 1024px){
+	a.nav-link {
+		font-size: 16px;
+ 	}
+ 	.logo {
+		font-size: 80px;
+	}
+	.title {
+		font-size: 40px;
+	}
+	.subtitle {
+		font-size: 20px;
+	}
+	span.name {
+		font-size: 16px;
+	}
+	.footer {
+		font-size: 15px;
+	}
 }
