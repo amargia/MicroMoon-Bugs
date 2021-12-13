@@ -9,12 +9,23 @@ div	{
 	background-color: #5A4669;
 }
 .conHover:hover{
-	color: #6C7C9C;
 	transform: scale(1.1);
 	transition: all 200ms ease-in-out;
 }
+.navbar-nav .nav-item .nav-link{
+	color: #D9C7E8;
+}
+.navbar-nav .nav-item .nav-link:hover{
+	color: #242434;
+	transform: scale(1.1);
+	transition: all 200ms ease-in-out;
+}
+.navbar-nav .nav-item .nav-link.active{
+	color: #242434;
+}
 a.nav-link {
 	font-size: 12px;
+	color: #D9C7E8;
 }
 .logo {
 	color: #D9C7E8;
