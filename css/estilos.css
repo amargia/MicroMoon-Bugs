@@ -54,7 +54,7 @@ div.medio {
 div.rowContacto {
 	display: flex;
 	flex-direction: row;
-	justify-content: space-between;
+	justify-content: space-evenly;
 	flex-wrap: wrap;
 	padding: 10px;
 }
@@ -142,7 +142,7 @@ span.name {
 	div.rowContacto{
 		display: flex;
 		flex-direction: row;
-		justify-content: space-between;
+		justify-content: space-evenly;
 		padding: 10px;
 	}
 	.title {
@@ -193,7 +193,7 @@ span.name {
 	div.rowContacto{
 		display: flex;
 		flex-direction: row;
-		justify-content: space-between;
+		justify-content: space-evenly;
 		padding: 10px;
 	}
 	.title {
