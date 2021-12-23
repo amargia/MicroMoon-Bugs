@@ -1,354 +1,306 @@
-* {
-	margin: 0;
-	padding: 0;
-}
-/*universal*/
-html,body {
-    height: 100%;
-}
-body	{
-	background-color: #242434;
-	margin: 10px;
-	padding: 10px;
-	height: 100%;
-	font-family: 'Cultive Mono', monospace;
-}
-div	{
-	color: #8694B1;
-}
-li {
-	list-style-type: none;
-}
-.menu {
-	display: grid;
-	grid-template-columns: repeat(12, 1fr);
-}
-.menu li a {
-	text-decoration: none;
-	margin: 4px;
-	padding: 4px;
-	float: left;
-	color: #D9C7E8;
-	font-size: 20px;
-	transition: all 200ms ease-in-out;
-}
-.conHover:hover{
-	color: #8694B1;
-	transform: scale(1.1);
-}
-.logo span {
-	font-size: 80px;
-	color: #D9C7E8;
-}
-.menu li a.navigation__selected {
-	color: #945585;
-}
-.logo {
-	display: grid;
-	grid-template-columns: repeat(1, 1fr);
-	margin: 50px;
-	margin-bottom: 100px;
-	text-align: center;
-}
+.font-size-s-s {
+  font-size: 12px; }
 
-/*grids y contenido paginas*/
-.contenedor {
-	display: grid;
-	grid-template-areas:
-	"izq med der"
-	"izq med der"
-	"izq med der"
-	"footer footer footer";
-	width: 100%;
-	height: 100%;
-	clear: both;
-	padding-bottom: 50px;
-	min-height: 100vh;
-}
+.font-size-s-m {
+  font-size: 22px; }
+
+.font-size-s-l {
+  font-size: 45px; }
+
+.font-size-m-s {
+  font-size: 14px; }
+
+.font-size-m-m {
+  font-size: 16px; }
+
+.font-size-m-l {
+  font-size: 28px; }
+
+.font-size-m-xl {
+  font-size: 65px; }
+
+.font-size-l-m {
+  font-size: 20px; }
+
+.font-size-l-l {
+  font-size: 40px; }
+
+.font-size-l-xl {
+  font-size: 80px; }
+
+body {
+  background-color: #242434;
+  font-family: 'Cultive Mono', monospace; }
+
+.navbarBg {
+  background-color: #5A4669; }
+
+.conHover:hover {
+  transform: scale(1.1);
+  transition: all 200ms ease-in-out; }
+
+.navbar-nav .nav-item .nav-link {
+  color: #D9C7E8; }
+  .navbar-nav .nav-item .nav-link:hover {
+    color: #242434;
+    transform: scale(1.1);
+    transition: all 200ms ease-in-out; }
+  .navbar-nav .nav-item .nav-link.active {
+    color: #242434; }
+
+a.nav-link {
+  font-size: 12px;
+  color: #D9C7E8; }
+  @media all and (min-width: 768px) and (max-width: 1024px) {
+    a.nav-link {
+      font-size: 14px; } }
+  @media all and (min-width: 1024px) {
+    a.nav-link {
+      font-size: 16px; } }
+
+.homeLogo {
+  width: 50px;
+  height: 50px; }
+
+.logo {
+  padding-top: 10px;
+  color: #D9C7E8;
+  text-align: center;
+  padding-bottom: 10px; }
+  @media all and (min-width: 768px) and (max-width: 1024px) {
+    .logo {
+      font-size: 65px; } }
+  @media all and (min-width: 1024px) {
+    .logo {
+      font-size: 80px; } }
+
+div {
+  color: #6C7C9C; }
+  div.dashed {
+    padding: 10px;
+    border-style: dashed;
+    border-color: #D9C7E8;
+    border-radius: 50px; }
+  div p.izquierdaTitulo {
+    padding: 0.5rem; }
+  div p.top {
+    margin-top: 1.5rem; }
+  @media all and (min-width: 768px) and (max-width: 1024px) {
+    div p.topb {
+      margin-top: 7rem; } }
+  @media all and (min-width: 1024px) {
+    div p.topb {
+      margin-top: 9rem; } }
+  @media all and (min-width: 768px) and (max-width: 1024px) {
+    div p.topl {
+      margin-top: 10rem; } }
+  @media all and (min-width: 1024px) {
+    div p.topl {
+      margin-top: 12rem; } }
+  div.medio {
+    max-height: 50%;
+    margin-top: 50px; }
+  div.rowContacto {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 10px; }
+  div.rowDesktop {
+    display: none; }
+    @media all and (min-width: 768px) and (max-width: 1024px) {
+      div.rowDesktop {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding: 10px; } }
+    @media all and (min-width: 1024px) {
+      div.rowDesktop {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding: 10px; } }
+  div.rowmob {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); }
+    @media all and (min-width: 768px) and (max-width: 1024px) {
+      div.rowmob {
+        display: none; } }
+    @media all and (min-width: 1024px) {
+      div.rowmob {
+        display: none; } }
+  div.column {
+    flex: 1;
+    height: 180px;
+    margin-bottom: 15px;
+    line-height: 20px;
+    text-align: center;
+    transition: all 300ms ease-in-out; }
+    div.column span {
+      display: block;
+      max-width: 100%; }
+    div.column img {
+      width: 127px;
+      height: 134px;
+      max-width: 80%;
+      max-height: 80%;
+      border-radius: 50px; }
+  div.rowEquipo2 {
+    padding-top: 0; }
+    @media all and (min-width: 768px) and (max-width: 1024px) {
+      div.rowEquipo2 {
+        padding-top: 3rem; } }
+    @media all and (min-width: 1024px) {
+      div.rowEquipo2 {
+        padding-top: 3rem; } }
+  @media all and (min-width: 768px) and (max-width: 1024px) {
+    div.columnEq {
+      flex: 1;
+      height: 280px;
+      margin-bottom: 15px;
+      line-height: 20px;
+      text-align: center; }
+      div.columnEq img {
+        max-width: 80%;
+        max-height: 80%;
+        border-radius: 100px; } }
+  @media all and (min-width: 1024px) {
+    div.columnEq {
+      flex: 1;
+      height: 480px;
+      margin-bottom: 15px;
+      line-height: 20px;
+      text-align: center; }
+      div.columnEq img {
+        max-width: 80%;
+        max-height: 80%;
+        border-radius: 100px; } }
+
+.medioTitulo {
+  margin-bottom: 20px;
+  text-align: center; }
+
+.title {
+  color: #D9C7E8;
+  font-size: 22px; }
+  @media all and (min-width: 768px) and (max-width: 1024px) {
+    .title {
+      font-size: 28px; } }
+  @media all and (min-width: 1024px) {
+    .title {
+      font-size: 40px; } }
+
+.subtitle, .subtitleJuegos {
+  color: #6C7C9C;
+  font-size: 12px; }
+  @media all and (min-width: 768px) and (max-width: 1024px) {
+    .subtitle, .subtitleJuegos {
+      font-size: 16px; } }
+  @media all and (min-width: 1024px) {
+    .subtitle, .subtitleJuegos {
+      font-size: 20px; } }
+
+.subtitleJuegos {
+  text-align: left; }
+
+span.name {
+  font-size: 12px; }
+  @media all and (min-width: 768px) and (max-width: 1024px) {
+    span.name {
+      font-size: 14px; } }
+  @media all and (min-width: 1024px) {
+    span.name {
+      font-size: 16px; } }
+
+.nameColor {
+  color: #D9C7E8;
+  text-align: center; }
+
+.cargo {
+  text-align: center;
+  font-weight: bold; }
+  @media all and (min-width: 1024px) {
+    .cargo {
+      padding-top: 10px; } }
+
+.member {
+  object-fit: scale-down;
+  border-radius: 80px;
+  text-align: center; }
+
 /*arte desktop*/
 .contenedorimg {
-	display: grid;
-	grid-template-areas:
-	". . ."
-	". . ."
-	". . .";
-	justify-items: center;
-	grid-row-gap: 10px;
-}
+  display: grid;
+  grid-template-areas: "." "." ".";
+  justify-items: center;
+  grid-row-gap: 10px; }
+  .contenedorimg img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border: 2px dashed #D9C7E8; }
+  @media all and (min-width: 768px) and (max-width: 1024px) {
+    .contenedorimg {
+      display: grid;
+      grid-template-areas: ". . ." ". logo ." ". . .";
+      justify-items: center;
+      grid-row-gap: 10px; }
+      .contenedorimg img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        border: 2px dashed #D9C7E8; }
+        .contenedorimg img.logo {
+          grid-area: logo;
+          border: none; } }
+  @media all and (min-width: 1024px) {
+    .contenedorimg {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+      grid-template-areas: ". . ." ". logo ." ". . .";
+      justify-items: center; }
+      .contenedorimg img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        border: 2px dashed #D9C7E8; }
+        .contenedorimg img.logo {
+          grid-area: logo;
+          border: none; } }
+
 .arte {
-	grid-column: span 1;
-	width: 80%;
-	height: 80%;
-	object-fit: scale-down;
-}
+  grid-column: span 1; }
+  @media all and (min-width: 768px) and (max-width: 1024px) {
+    .arte {
+      grid-column: span 1;
+      width: 360px;
+      height: 660px;
+      object-fit: scale-down; } }
+  @media all and (min-width: 1024px) {
+    .arte {
+      grid-column: span 1;
+      width: 360px;
+      height: 660px; } }
+
 /*fin grid arte desktop*/
-.centrado{
-	padding-left: 20px;
-}
+.footer {
+  font-size: 11px; }
+  @media all and (min-width: 768px) and (max-width: 1024px) {
+    .footer {
+      font-size: 13px; } }
+  @media all and (min-width: 1024px) {
+    .footer {
+      font-size: 15px; } }
+  .footer a {
+    text-decoration: none;
+    color: #D9C7E8; }
+    .footer a img {
+      width: 25px;
+      height: 25px; }
 
-/*izquierda desktop*/
-div.izquierda {
-	grid-area: izq;
-	width: 80%;
-	padding: 10px;
-	border-style: dashed;
-	border-color: #D9C7E8;
-}
-div	p.izquierda__titulo {
-	font-size: 40px;
-	padding: 0.5rem;
-	padding-bottom: 30px;
-}
-div p.izquierda__cuerpo {
-	font-size: 20px;
-	line-height: 25px;
-}
-div.juegos {
-	border-style: none;
-}
-/*medio desktop*/
-div.medio {
-	grid-area: med;
-	width: 80%;
-	max-height: 50%;
-	padding-left: 30px;
-}
-.medio__titulo {
-	margin-bottom: 20px;
-	font-size: 40px;
-	text-align: center;
-}
-div.row {
-	display: flex;
-  	flex-direction: row;
-  	justify-content: space-between;
-  	flex-wrap: wrap;
-  	margin: 10px;
-}
-div.rowmob{
-	display: none;
-}
-div.column {
-	flex: 1;
-	max-width: 100%;
-	height: 180px;
-	margin-bottom: 15px;
-	font-size: 15px;
-	line-height: 20px;
-	text-align: center;
-	transition: all 300ms ease-in-out;
-}
-div.w100 {
-	width: 100%;
-}
-div.column span {
-	display: block;
-	max-width: 100%;
-}
-div.column img {
-	max-width: 80%;
-	max-height: 80%;
-	object-fit: scale-down;
-}
-div.imgdiv {
-	grid-area: der;
-	float: left;
-	width: 100%;
-}
-
-/*derecha desktop*/
-.gameimg {
-	grid-area: der;
-	float: right;
-	max-width: 100%;
-	width: 100%;
-}
-div p.descripcion {
-	width: 80%;
-	font-size: 20px;
-	line-height: 30px;
-	padding-right: 50px;
-}
-div.equipeximg {
-	grid-area: izq;
-}
-div.equipeximg img {	
-	width: 80%;
-	height: 80%;
-	object-fit: scale-down;
-}
-ul.nombres {
-	grid-area: med;
-	max-width: 100%;
-}
-
-/*footer*/
-hr {
-	margin-left: -20px;
-	margin-top: 60px;
-	margin-bottom: 10px;
-}
-div.footer {
-	grid-area: footer;
-	width: 100%;
-	font-size: 12px;
-	padding: 0.5rem;
-}
-.footer a.footerLink {
-	text-decoration: none;
-	color: #D9C7E8;
-}
-
-/*media queries*/
-@media all and (max-width: 768px){
-	.menu li a{
-		font-size: 12px;
-	}
-	.logo span{
-		font-size: 45px;
-	}
-	.contenedor{
-		display: grid;
-		grid-template-areas: 
-		"mbizq"
-		"mbmed"
-		"mbder"
-		"footer";
-	}
-	div.izquierda{
-		grid-area: mbizq;
-		width: 90%;
-	}
-	div p.izquierda__titulo{
-		font-size: 22px;
-	}
-	div p.izquierda__cuerpo{
-		font-size: 12px;
-	}
-	div.medio{
-		grid-area: mbmed;
-	}
-	.espacioMob{
-		padding-top: 50px;
-	}
-	div p.medio__titulo{
-		font-size: 22px;
-		text-align: center;
-	}
-	div.row{
-		display: none;
-	}
-	div.rowmob{
-		display: grid;
-		grid-template-columns: repeat(5, 1fr);
-	}
-	.name{
-		font-size: 12px;
-	}
-	div.imgdiv img{
-		display: none;
-	}
-	/*arte*/
-	.contenedorimg{
-		width: 80%;
-		display: grid;
-		grid-template-rows: repeat(9, 1fr);
-		grid-template-areas:
-		"."
-		"."
-		"."
-	}
-	.arte {
-		width: 100%;
-		grid-column: span 1;
-		grid-row: span 1;
-		object-fit: scale-down;
-	}
-	/*juegos*/
-	div p.descripcion{
-		font-size: 12px;
-	}
-	/*equipo*/
-	ul.nombres li{
-		font-size: 12px;
-	}
-	.footer{
-		grid-area: footer;
-	}
-}
-@media all and (min-width: 769px) and (max-width: 1024px){
-	.menu li a{
-		font-size: 16px;
-	}
-	.logo span{
-		font-size: 65px;
-	}
-		.contenedor{
-		display: grid;
-		grid-template-areas: 
-		"mbizq"
-		"mbmed"
-		"mbder"
-		"footer";
-	}
-	div.izquierda{
-		grid-area: mbizq;
-		width: 90%;
-	}
-	div p.izquierda__titulo{
-		font-size: 28px;
-	}
-	div p.izquierda__cuerpo{
-		font-size: 16px;
-	}
-	div.medio{
-		grid-area: mbmed;
-	}
-	.espacioMob{
-		padding-top: 50px;
-	}
-	div p.medio__titulo{
-		font-size: 28px;
-		text-align: center;
-	}
-	div.row{
-		display: none;
-	}
-	div.rowmob{
-		display: grid;
-		grid-template-columns: repeat(5, 1fr);
-	}
-	.name{
-		font-size: 16px;
-	}
-	div.imgdiv img{
-		display: none;
-	}
-	/*arte*/
-	.contenedorimg{
-		width: 80%;
-		display: grid;
-		grid-template-rows: repeat(9, 1fr);
-		grid-template-areas:
-		"."
-		"."
-		"."
-	}
-	.arte {
-		width: 100%;
-		grid-column: span 1;
-		grid-row: span 1;
-		object-fit: scale-down;
-	}
-	/*juegos*/
-	div p.descripcion{
-		font-size: 16px;
-	}
-	/*equipo*/
-	ul.nombres li{
-		font-size: 16px;
-	}
-	.footer{
-		grid-area: footer;
-	}
-}
+footer {
+  padding-left: 0.5rem;
+  text-align: left; }

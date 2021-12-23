@@ -1,43 +1,103 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="css/estilos.css">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-	<title>Juegos</title>
-</head>
+<!doctype html>
+<html lang="es">
+  	<head>
+	    <meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+	    <meta name="description" content="desarrolladores de videojuegos indie">
+    	<meta name="keywords" content="videojuegos juego movil developer pixel arte desarrolladora programadora liderado mujeres indie chile">
+	    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	    <link rel="stylesheet" type="text/css" href="css/estilos.css">
+			<title>Juegos</title>
+		</head>
 <body>
-	<div><!--menu principal-->
-	<ul class="menu">
-		<li><a class="conHover" href="index.html">Home</a></a></li>
-		<li><a class="navigation__selected" href="juegos.html">Juegos</a></li>
-		<li><a class="conHover" href="arte.html">Arte</a></li>
-		<li><a class="conHover" href="equipo.html">Equipo</a></li>
-		<li><a class="conHover" href="contacto.html">Contacto</a></li>
-	</ul>
-	</div>
-	<div class="logo"><!--titulo con logo-->
-		<span><img src="imagenes/logomicromoon.png" alt="logo1">Micromoon Bugs</span>
-	</div>
-	<div class="contenedor centrado"><!--contenido pagina-->
-		<div class="izquierda juegos">
-		<p class="izquierda__titulo">Bzz the Balloons</p>
-		<!--video-->
-		<iframe src="imagenes/abejitafinal.mp4"></iframe>
-		</div>
+		<div class="navbarBg container-fluid px-0">
+        <div class="container-xl px-0">
+          <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="index.html">
+              	<img class="homeLogo img-fluid" src="imagenes/logomicromoon.png">
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="juegos.html">Juegos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="arte.html">Arte</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="equipo.html">Equipo</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="contacto.html">Contacto</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
+    </div>
+		<!--logo principal "header"-->
+		<header>
+    	<p class="logo"><img src="imagenes/logomicromoon.png" alt="logo tardígrado y luna">MicroMoon Bugs</p>
+    	<p class="title medioTitulo">Nuestros Juegos</p>
+    </header>
+	<div class="medio container-fluid"><!--contenido pagina-->
+		<article class="row">
+			<div class="col-12 col-md-3 col-xl-3"><!--izquierda-->
+				<p class="title izquierdaTitulo">Bzz the Balloons</p>
+				<!--video-->
+				<div class="ratio ratio-16x9">
+					<iframe src="imagenes/abejitafinal.mp4"></iframe>
+				</div>
+			</div>
 			<!--descripcion derecha-->
-			<div><p class="descripcion">Bzz the balloons! es un juego móvil gratuito de acción que tiene como objetivo visibilizar una idea ambientalista de manera atractiva, divertida e inocente. La protagonista de este juego es Inka, una abeja muy especial que lucha todos los días sin descanso, reventando una cantidad frenética de hábiles globos enemigos que contaminan su hábitat. Inka sueña con un mundo florido en el que se pueda polinizar en paz.
-			El aspecto del juego evoca a la nostalgia mediante su arte pixelado y sonido chiptune 8-bit. 
-			En cada partida se ganan puntos, los cuales sirven para desbloquear coleccionables que el jugador puede combinar a su gusto, desde vestir a Inka y a los globos enemigos hasta cambiar el fondo y la música. Por último, existen recompensas diarias por entrar al juego y compartirlo en redes sociales. </p>
-		</div>
-		<div class="footer"><!--footer-->
-			<hr>
-			<div>Follow us on our social media! <a class="footerLink" href="https://www.instagram.com/bzztheballoons/" target="_blank">Instagram Bzz the Balloons</a>
-			© all rights reserved</div>
-		</div>
+			<div class="col-12 col-md-9 col-xl-9">
+				<p class="subtitleJuegos topb">Bzz the balloons! es un juego móvil gratuito de acción que tiene como objetivo visibilizar una idea ambientalista de manera atractiva, divertida e inocente. La protagonista de este juego es Inka, una abeja muy especial que lucha todos los días sin descanso, reventando una cantidad frenética de hábiles globos enemigos que contaminan su hábitat. Inka sueña con un mundo florido en el que se pueda polinizar en paz.
+				El aspecto del juego evoca a la nostalgia mediante su arte pixelado y sonido chiptune 8-bit. 
+				En cada partida se ganan puntos, los cuales sirven para desbloquear coleccionables que el jugador puede combinar a su gusto, desde vestir a Inka y a los globos enemigos hasta cambiar el fondo y la música. Por último, existen recompensas diarias por entrar al juego y compartirlo en redes sociales.</p>
+			</div>
+		</article>
+		<article class="row rowEquipo">
+			<div class="col-12 col-md-3 col-xl-3 mt-5"><!--izquierda-->
+				<p class="title izquierdaTitulo">Lumi and Squishy</p>
+				<!--foto-->
+				<div class="ratio ratio-16x9">
+					<img src="imagenes/menulumi.png" alt="menu juego lumi">
+				</div>
+			</div>
+			<!--descripcion derecha-->
+			<div class="col-12 col-md-9 col-xl-9">
+				<p class="subtitleJuegos topl">Lumi, una extraterrestre, y Squishy, su mascota IA, se estrellaron en un parque de diversiones de un planeta desconocido y ahora deben buscar materiales para construir nuevamente su nave espacial y poder volver a casa.</p>
+			</div>
+		</article>
+		<article class="row rowEquipo">
+			<div class="col-12 col-md-3 col-xl-3 mt-5"><!--izquierda-->
+				<p class="title izquierdaTitulo">Ghost Bond</p>
+				<!--foto-->
+				<div class="ratio ratio-16x9">
+					<img src="imagenes/ghostbondgp.png" alt="gameplay juego ghost bond">
+				</div>
+			</div>
+			<!--descripcion derecha-->
+			<div class="col-12 col-md-9 col-xl-9">
+				<p class="subtitleJuegos topb">Alguna vez te sentiste triste por no volver a ver a tu mascota después de fallecida? No te preocupes! Nuestro excavador del cementerio local está aquí para guiar a tus mascotas para que puedan verte de nuevo antes de ir a su otra vida! Ni siquiera debes esperar tanto, él los reunirá antes del amanecer...</p>
+			</div>
+		</article>			
 	</div>
+		<div class="col-12"><!--footer-->
+			<hr>
+			<footer>
+        <p class="footer">Follow us on our social media! <a href="https://www.instagram.com/bzztheballoons/" target="_blank"><img src="imagenes/instagram.png" alt="logo instagram">Bzz the Balloons</a>
+			 © all rights reserved</p>
+      </footer>
+		</div>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>	
 </body>
 </html>

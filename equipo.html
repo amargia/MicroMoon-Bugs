@@ -1,45 +1,121 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="css/estilos.css">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-	<title>Equipo</title>
-</head>
+<!doctype html>
+<html lang="es">
+  	<head>
+    	<meta charset="utf-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+    	<meta name="description" content="desarrolladores de videojuegos indie">
+    	<meta name="keywords" content="videojuegos juego movil developer pixel arte desarrolladora programadora liderado mujeres indie chile">
+    	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+			<title>Equipo</title>
+		</head>
 <body>
-	<div><!--menu principal-->
-	<ul class="menu">
-		<li><a class="conHover" href="index.html">Home</a></a></li>
-		<li><a class="conHover" href="juegos.html">Juegos</a></li>
-		<li><a class="conHover" href="arte.html">Arte</a></li>
-		<li><a class="navigation__selected" href="equipo.html">Equipo</a></li>
-		<li><a class="conHover" href="contacto.html">Contacto</a></li>
-	</ul>
-	</div>
-	<div class="logo"><!--titulo con logo-->
-		<span><img src="imagenes/logomicromoon.png" alt="logo1">Micromoon Bugs</span>
-	</div>
-	<div class="contenedor"><!--contenido pagina-->
-		<div class="medio"><!--al medio-->
-			<p class="medio__titulo">Miembros del equipo</p>
-			<div class="equipeximg">
-				<img src="imagenes/equipex.png"></div>
-			<ul class="nombres">
-				<li>Valentina Dupouy (Nervous Du) - Game Designer</li>
-				<li>Carolina Rojas - Programmer</li>
-				<li>Alexandra Marzuqa Giacaman - Music and Sound Designer</li>
-				<li>Javiera González (Waririn) - 2D Artist</li>
-				<li>Paulo Morales (Lyud) - Pixel Artist</li>
-			</ul>
+		<div class="navbarBg container-fluid px-0">
+        <div class="container-xl px-0">
+          <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="index.html">
+              	<img class="homeLogo img-fluid" src="imagenes/logomicromoon.png">
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="juegos.html">Juegos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="arte.html">Arte</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="equipo.html">Equipo</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="contacto.html">Contacto</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
+    </div>
+		<!--logo principal "header"-->
+		<header>
+    	<p class="logo"><img src="imagenes/logomicromoon.png" alt="logo tardígrado y luna">MicroMoon Bugs</p>
+			<p class="title medioTitulo">Miembros del equipo</p>
+		</header>
+		<div class="medio container-fluid"><!--contenido pagina-->
+				<div class="row rowDesktop">
+					<div class="columnEq col-12 col-md-4 col-xl-4">
+						<p class="subtitle nameColor">Alexandra Marzuqa Giacaman</p>
+							<img class="member" src="imagenes/alecilla.png" alt="foto ale cartoon">
+						<p class="subtitle cargo">Music and Sound Designer</p>
+					</div>				
+					<div class="columnEq col-12 col-md-4 col-xl-4">
+						<p class="subtitle nameColor">Valentina Dupouy (Nervous Du)</p>
+							<img class="member" src="imagenes/valecilla.png" alt="foto vale cartoon">
+						<p class="subtitle cargo">Game Designer</p>
+					</div>
+					<div class="columnEq col-12 col-md-4 col-xl-4">
+						<p class="subtitle nameColor">Carolina Rojas</p>
+							<img class="member" src="imagenes/caritito.png" alt="foto caro cartoon">
+						<p class="subtitle cargo">Programmer</p>
+					</div>
+				</div>
+				<div class="row rowDesktop">
+					<div class="columnEq col-12 col-md-6 col-xl-6">
+						<p class="subtitle nameColor">Javiera González (Waririn)</p>
+							<img class="member" src="imagenes/javicilla.png" alt="foto javi cartoon">
+						<p class="subtitle cargo">2D Artist</p>
+					</div>
+					<div class="columnEq col-12 col-md-6 col-xl-6">
+						<p class="subtitle nameColor">Paulo Morales (Lyud)</p>
+							<img class="member" src="imagenes/divo.png" alt="foto paulo cartoon">
+						<p class="subtitle cargo">Pixel Artist</p>
+					</div>
+				</div>
+				<!--mobile-->
+				<div class="row rowmob">
+					<div class="column col-12 col-md-4 col-xl-4">
+						<p class="subtitle nameColor">Alexandra Marzuqa Giacaman</p>
+							<img class="member" src="imagenes/alecilla.png" alt="foto ale cartoon">
+						<p class="subtitle cargo">Music and Sound Designer</p>
+					</div>				
+					<div class="column col-12 col-md-4 col-xl-4">
+						<p class="subtitle nameColor">Valentina Dupouy (Nervous Du)</p>
+							<img class="member" src="imagenes/valecilla.png" alt="foto vale cartoon">
+						<p class="subtitle cargo">Game Designer</p>
+					</div>
+					<div class="column col-12 col-md-4 col-xl-4">
+						<p class="subtitle nameColor">Carolina Rojas</p>
+							<img class="member" src="imagenes/caritito.png" alt="foto caro cartoon">
+						<p class="subtitle cargo">Programmer</p>
+					</div>
+				</div>
+				<div class="row rowmob">
+					<div class="column col-12 col-md-6 col-xl-6">
+						<p class="subtitle nameColor">Javiera González (Waririn)</p>
+							<img class="member" src="imagenes/javicilla.png" alt="foto javi cartoon">
+						<p class="subtitle cargo">2D Artist</p>
+					</div>
+					<div class="column col-12 col-md-6 col-xl-6">
+						<p class="subtitle nameColor">Paulo Morales (Lyud)</p>
+							<img class="member" src="imagenes/divo.png" alt="foto paulo cartoon">
+						<p class="subtitle cargo">Pixel Artist</p>
+					</div>
+				</div>				
 		</div>
-		<div class="footer"><!--footer-->
+		<div class="col-12"><!--footer-->
 			<hr>
-			<div>Follow us on our social media! <a class="footerLink" href="https://www.instagram.com/bzztheballoons/" target="_blank">Instagram Bzz the Balloons</a>
-			© all rights reserved</div>
-		</div>
+			<footer>
+        <p class="footer">Follow us on our social media! <a href="https://www.instagram.com/bzztheballoons/" target="_blank"><img src="imagenes/instagram.png" alt="logo instagram">Bzz the Balloons</a>
+			 © all rights reserved</p>
+      </footer>
 	</div>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>

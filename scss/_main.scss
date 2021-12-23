@@ -1,0 +1,296 @@
+body	{
+	background-color: $bgColor;
+	font-family: 'Cultive Mono', monospace;
+}
+.navbarBg {
+	background-color: #5A4669;
+}
+.conHover {
+	&:hover{
+		@include hover(scale(1.1),all 200ms ease-in-out);
+	}
+}
+.navbar-nav {
+	.nav-item{
+		.nav-link{
+			color: $colorTtl;
+			&:hover{
+				color: $bgColor;
+				@include hover(scale(1.1),all 200ms ease-in-out);
+			}
+			&.active{
+				color: $bgColor;
+			}
+		}
+	}
+}
+a {
+	&.nav-link {
+		font-size: map-get($fSize, s-s);
+		color: $colorTtl;
+		@media all and (min-width: $bpoint-md) and (max-width: $bpoint-xl){
+			font-size: map-get($fSize, m-s);
+		}
+		@media all and (min-width: $bpoint-xl){
+			font-size: map-get($fSize, m-m);
+		}
+	}
+}
+.homeLogo {
+	width: 50px;
+	height: 50px;
+}
+.logo {
+	padding-top: $diezPx;
+	color: $colorTtl;
+	text-align: center;
+	padding-bottom: $diezPx;
+	@media all and (min-width: $bpoint-md) and (max-width: $bpoint-xl){
+		font-size: map-get($fSize, m-xl);
+	}
+	@media all and (min-width: $bpoint-xl){
+		font-size: map-get($fSize, l-xl);
+	}
+}
+div {
+	color: $colorSttl;
+	&.dashed {
+		padding: $diezPx;
+		border-style: dashed;
+		border-color: $colorTtl;
+		border-radius: 50px;
+	}
+	p {
+		&.izquierdaTitulo{
+			padding: 0.5rem;
+		}
+		&.top {
+			margin-top: 1.5rem;
+		}
+		&.topb {
+			@media all and (min-width: $bpoint-md) and (max-width: $bpoint-xl){
+				margin-top: 7rem;
+			}
+			@media all and (min-width: $bpoint-xl){
+				margin-top: 9rem;
+			}
+		}
+		&.topl {
+			@media all and (min-width: $bpoint-md) and (max-width: $bpoint-xl){
+				margin-top: 10rem;
+			}
+			@media all and (min-width: $bpoint-xl){
+				margin-top: 12rem;
+			}
+		}
+	}
+	&.medio{
+		max-height: 50%;
+		margin-top: 50px;
+	}
+	&.rowContacto{
+		@include flexbox(space-evenly);
+	}
+	&.rowDesktop {
+		display: none;
+		@media all and (min-width: $bpoint-md) and (max-width: $bpoint-xl){
+			@include flexbox(space-between);
+		}
+		@media all and (min-width: $bpoint-xl){
+			@include flexbox(space-between);			
+		}
+	}
+	&.rowmob{
+		display: grid;
+		grid-template-columns: repeat(1, 1fr);
+		@media all and (min-width: $bpoint-md) and (max-width: $bpoint-xl){
+			display: none;
+		}
+		@media all and (min-width: $bpoint-xl){
+			display: none;
+		}
+	}
+	&.column{
+		@include flexColumn(180px);
+		transition: all 300ms ease-in-out;
+		span{
+			display: block;
+			max-width: 100%;
+		}
+		img{
+			width: 127px;
+			height: 134px;
+			@include imgColumn(50px);
+		}
+	}
+	&.rowEquipo2 {
+		padding-top: 0;
+		@media all and (min-width: $bpoint-md) and (max-width: $bpoint-xl){
+			padding-top: 3rem;
+		}
+		@media all and (min-width: $bpoint-xl){
+			padding-top: 3rem;
+		}
+	}
+	@media all and (min-width: $bpoint-md) and (max-width: $bpoint-xl){
+		&.columnEq {
+			@include flexColumn(280px);
+			img {
+				@include imgColumn(100px);
+			}
+		}
+	}
+	@media all and (min-width: $bpoint-xl){
+		&.columnEq {
+			@include flexColumn(480px);
+			img {
+				@include imgColumn(100px);
+			}
+		}
+	}
+	
+}
+.medioTitulo {
+	margin-bottom: 20px;
+	text-align: center;
+}
+.title {
+	color: $colorTtl;
+	font-size: map-get($fSize, s-m);
+	@media all and (min-width: $bpoint-md) and (max-width: $bpoint-xl){
+		font-size: map-get($fSize, m-l);
+	}
+	@media all and (min-width: $bpoint-xl){
+		font-size: map-get($fSize, l-l);
+	}
+}
+.subtitle {
+	color: $colorSttl;
+	font-size: map-get($fSize, s-s);
+	@media all and (min-width: $bpoint-md) and (max-width: $bpoint-xl){
+		font-size: map-get($fSize, m-m);
+	}
+	@media all and (min-width: $bpoint-xl){
+		font-size: map-get($fSize, l-m);
+	}
+}
+.subtitleJuegos {
+	@extend .subtitle;
+	text-align: left;
+}
+span{
+	&.name{
+		font-size: map-get($fSize, s-s);
+		@media all and (min-width: $bpoint-md) and (max-width: $bpoint-xl){
+			font-size: map-get($fSize, m-s);
+		}
+		@media all and (min-width: $bpoint-xl){
+			font-size: map-get($fSize, m-m);
+		}
+	}
+}
+.nameColor {
+	color: $colorTtl;
+	text-align: center;
+}
+.cargo {
+	text-align: center;
+	font-weight: bold;
+	@media all and (min-width: $bpoint-xl){
+		padding-top: 10px;
+	}
+}
+.member {
+	object-fit: scale-down;
+	border-radius: 80px;
+	text-align: center;
+}
+/*arte desktop*/
+.contenedorimg {
+	display: grid;
+	grid-template-areas:
+	"."
+	"."
+	".";
+	justify-items: center;
+	grid-row-gap: $diezPx;
+	img {
+		width: 100%;
+		height: 100%;
+		object-fit: contain;
+		border: 2px dashed #D9C7E8;
+	}
+	@media all and (min-width: $bpoint-md) and (max-width: $bpoint-xl){
+		display: grid;
+		grid-template-areas:
+		". . ."
+		". logo ."
+		". . .";
+		justify-items: center;
+		grid-row-gap: $diezPx;
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: contain;
+			border: 2px dashed #D9C7E8;
+			&.logo {
+				grid-area: logo;
+				border: none;
+			}
+		}
+	}
+	@media all and (min-width: $bpoint-xl){
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: $diezPx;
+		grid-template-areas:
+		". . ."
+		". logo ."
+		". . .";
+		justify-items: center;
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: contain;
+			border: 2px dashed #D9C7E8;
+			&.logo {
+				grid-area: logo;
+				border: none;
+			}			
+		}		
+	}
+}
+.arte {
+	grid-column: span 1;
+	@media all and (min-width: $bpoint-md) and (max-width: $bpoint-xl){
+		grid-column: span 1;
+		@include medidaImgArte;
+		object-fit: scale-down;
+	}
+	@media all and (min-width: $bpoint-xl){
+		grid-column: span 1;
+		@include medidaImgArte;	
+	}
+}
+/*fin grid arte desktop*/
+.footer{
+	font-size: 11px;
+	@media all and (min-width: $bpoint-md) and (max-width: $bpoint-xl){
+		font-size: 13px;
+	}
+	@media all and (min-width: $bpoint-xl){
+		font-size: 15px;
+	}
+	a{
+		text-decoration: none;
+		color: $colorTtl;
+		& img {
+			width: 25px;
+			height: 25px;
+		}	
+	}
+}
+footer {
+	padding-left: 0.5rem;
+	text-align: left;
+}

@@ -1,42 +1,73 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="css/estilos.css">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-	<title>Arte</title>
-</head>
+<!doctype html>
+<html lang="es">
+  	<head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="description" content="desarrolladores de videojuegos indie">
+      <meta name="keywords" content="videojuegos juego movil developer pixel arte desarrolladora programadora liderado mujeres indie chile">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+      <link rel="stylesheet" type="text/css" href="css/estilos.css">
+	    <title>Arte y diseño</title>
+	  </head>
 <body>
-	<div><!--menu principal-->
-	<ul class="menu">
-		<li><a class="conHover" href="index.html">Home</a></a></li>
-		<li><a class="conHover" href="juegos.html">Juegos</a></li>
-		<li><a class="navigation__selected" href="arte.html">Arte</a></li>
-		<li><a class="conHover" href="equipo.html">Equipo</a></li>
-		<li><a class="conHover" href="contacto.html">Contacto</a></li>
-	</ul>
-	</div>
-	<div class="logo"><!--titulo con logo-->
-		<span><img src="imagenes/logomicromoon.png" alt="logo1">Micromoon Bugs</span>
-	</div>
-	<div class="contenedorimg"><!--contenido pagina-->
-		<img class="arte" src="imagenes/logo.png" alt="logo">
-		<img class="arte" src="imagenes/gameplay3.png" alt="logo">
-		<img class="arte" src="imagenes/gameplay2.png" alt="logo">
-		<img class="arte" src="imagenes/logo.png" alt="logo">
-		<img class="arte" src="imagenes/gameplay3.png" alt="logo">
-		<img class="arte" src="imagenes/gameplay2.png" alt="logo">
-		<img class="arte" src="imagenes/logo.png" alt="logo">
-		<img class="arte" src="imagenes/gameplay3.png" alt="logo">
-		<img class="arte" src="imagenes/gameplay2.png" alt="logo">
-	</div>
-		<div class="footer"><!--footer-->
-			<hr>
-			<div>Follow us on our social media! <a class="footerLink" href="https://www.instagram.com/bzztheballoons/" target="_blank">Instagram Bzz the Balloons</a>
-			© all rights reserved</div>
+		<div class="navbarBg container-fluid px-0">
+        <div class="container-xl px-0">
+          <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="index.html">
+              	<img class="homeLogo img-fluid" src="imagenes/logomicromoon.png">
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="juegos.html">Juegos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="arte.html">Arte</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="equipo.html">Equipo</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="contacto.html">Contacto</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
+    </div>
+		<!--logo principal "header"-->
+    <header>
+    	<p class="logo"><img src="imagenes/logomicromoon.png" alt="logo tardígrado y luna">MicroMoon Bugs</p>
+      <p class="title medioTitulo">Arte y diseño</p>
+    </header>
+	<div class="medio container-fluid"><!--contenido pagina-->
+		<div class="contenedorimg"><!--contenido pagina-->
+			<img class="arte" src="imagenes/gameplay3.png" alt="Gameplay día bzz the balloons">
+			<img class="arte" src="imagenes/gameplay2.png" alt="Gameplay noche bzz the balloons">
+			<img class="arte" src="imagenes/lumi.png" alt="gameplay lumi">
+			<img class="arte" src="imagenes/gameplay.png" alt="Gameplay tarde bzz the balloons">
+      <img class="logo" src="imagenes/logo.png" alt="logo tardígrado y luna">     
+			<img class="arte" src="imagenes/gameplay.png" alt="Gameplay tarde bzz the balloons">
+			<img class="arte" src="imagenes/ghost.png" alt="gameplay ghost bond">
+			<img class="arte" src="imagenes/gameplay4.png" alt="imagen referencial bzz the balloons">
+			<img class="arte" src="imagenes/gameplay3.png" alt="Gameplay día bzz the balloons">
 		</div>
+	</div>
+		<div class="col-12"><!--footer-->
+			<hr>
+			<footer>
+        <p class="footer">Follow us on our social media! <a href="https://www.instagram.com/bzztheballoons/" target="_blank"><img src="imagenes/instagram.png" alt="logo instagram">Bzz the Balloons</a>
+			 © all rights reserved</p>
+      </footer>
+		</div>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>

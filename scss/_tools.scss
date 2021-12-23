@@ -1,0 +1,32 @@
+@mixin hover($transform,$transition){
+	transform: $transform;
+	transition: $transition;
+}
+@mixin flexbox($jContent){
+	display: flex;
+	flex-direction: row;
+	justify-content: $jContent;
+	flex-wrap: wrap;
+	padding: $diezPx;
+}
+@mixin flexColumn($height){
+	flex: 1;
+	height: $height;
+	margin-bottom: 15px;
+	line-height: 20px;
+	text-align: center;
+}
+@mixin imgColumn($radio){
+	max-width: 80%;
+	max-height: 80%;
+	border-radius: $radio;
+}
+@each $k, $v in $fSize{
+	.font-size-#{$k}{
+		font-size: $v;
+	}
+}
+@mixin medidaImgArte{
+	width: 360px;
+	height: 660px;
+}

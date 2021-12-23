@@ -1,65 +1,111 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="css/estilos.css">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap" rel="stylesheet">
-	<title>MicroMoon Bugs</title>
-</head>
-<body>
-	<div><!--menu principal "header"-->
-		<ul class="menu">
-			<li><a class="navigation__selected" href="index.html">Home</a></li>
-			<li><a class="conHover" href="juegos.html">Juegos</a></li>
-			<li><a class="conHover" href="arte.html">Arte</a></li>
-			<li><a class="conHover" href="equipo.html">Equipo</a></li>
-			<li><a class="conHover" href="contacto.html">Contacto</a></li>
-		</ul>
-	</div>
-	<div class="logo"><!--titulo con logo-->
-			<span><img src="imagenes/logomicromoon.png" alt="logo1">Micromoon Bugs</span>
-	</div>
-		<div class="contenedor"><!--contenido pagina-->
-			<div class="izquierda"><!--lado izquierdo-->
-				<p class="izquierda__titulo">¿Quiénes somos?</p>
-				<p class="izquierda__cuerpo">En el año 2019 Vale, Caro y Ale hicieron equipo en la Woman Game Jam que se realizó en la academia "101 Training" en Santiago, Chile. Luego de finalizada la competencia se dieron cuenta que hacían muy buen equipo, por lo que decidieron unirse y crear su propio videojuego, así nació el primer proyecto autogestionado "Bzz The Balloons".
-				Con el transcurso del tiempo y a medida que fueron desarrollando el juego, se dieron cuenta de que les hacía falta más apoyo, es ahí cuando se unieron Paulo y Javi, conformando el equipo de 5 maravillosas personas que son hoy en día y esperan poder seguir desarrollando muchos videojuegos más.</p>
-			</div>
-			<div class="medio espacioMob"><!--al medio-->
-				<p class="medio__titulo">Miembros del equipo</p>
-				<div class="equipo">
-					<div class="row">
-		 				<div class="column conHover"><img src="imagenes/vale.jpeg"><span class="name">Valentina Dupouy (Nervous Du)</span></div>
-		 				<div class="column conHover"><img src="imagenes/caro.png"><span class="name">Carolina Rojas</span></div>
-					</div>
-					<div class="row">
-		 				<div class="column w100 conHover"><img src="imagenes/ale2.png"><span class="name">Alexandra Marzuqa Giacaman</span></div>
-		    		</div>
-		    		<div class="row">
-		 				<div class="column conHover"><img src="imagenes/javi.jpeg"><span class="name">Javiera González (Waririn)</span></div>
-		 				<div class="column conHover"><img src="imagenes/paulo.png"><span class="name">Paulo Morales (Lyud)</span></div>
-		 			</div>
-				<!--equipo mobile-->
-					<div class="rowmob">
-						<div class="column"><img src="imagenes/vale.jpeg"><span class="name">Valentina Dupouy (Nervous Du)</span></div>
-		 				<div class="column"><img src="imagenes/caro.png"><span class="name">Carolina Rojas</span></div>
-		 				<div class="column"><img src="imagenes/ale2.png"><span class="name">Alexandra Marzuqa Giacaman</span></div>
-		 				<div class="column"><img src="imagenes/javi.jpeg"><span class="name">Javiera González (Waririn)</span></div>
-		 				<div class="column"><img src="imagenes/paulo.png"><span class="name">Paulo Morales (Lyud)</span></div>
-		 			</div>
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="desarrolladores de videojuegos indie">
+    <meta name="keywords" content="videojuegos juego movil developer pixel arte desarrolladora programadora liderado mujeres indie chile">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/estilos.css">
+		<title>MicroMoon Bugs</title>
+  </head>
+  <body>
+		<div class="navbarBg container-fluid px-0">
+        <div class="container-xl px-0">
+          <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="index.html">
+              	<img class="homeLogo img-fluid" src="imagenes/logomicromoon.png">
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="juegos.html">Juegos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="arte.html">Arte</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="equipo.html">Equipo</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="contacto.html">Contacto</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
+    </div>
+		<!--logo principal "header"-->
+		<header>
+    	<p class="logo font-size-s-l"><img src="imagenes/logomicromoon.png" alt="logo tardígrado y luna">MicroMoon Bugs</p>
+    </header>	
+    	<div class="container-fluid"><!--contenido página-->
+				<div class="dashed medio"><!--lado izquierdo-->
+					<p class="title medioTitulo">¿Quiénes somos?</p>
+					<p class="subtitle">En el año 2019 Vale, Caro y Ale hicieron equipo en la Woman Game Jam que se realizó en la academia "101 Training" en Santiago de Chile, donde la finalidad era crear un videojuego en menos de tres días.
+					Luego de finalizada la competencia se dieron cuenta que hacían muy buen equipo, por lo que decidieron unirse y crear su propio videojuego, así nació el primer proyecto autogestionado "Bzz The Balloons".
+					Con el transcurso del tiempo y a medida que fueron desarrollando el juego, se dieron cuenta de que les hacía falta más apoyo, es ahí cuando se unieron Paulo y Javi, conformando el equipo de 5 maravillosas personas que son hoy en día y esperan poder seguir desarrollando muchos videojuegos más.</p>
+					<p class="subtitle">Como su nombre lo dice, esta competencia también tenía la finalidad de visibilizar a las mujeres en el mundo de los videojuegos, por lo que si bien era una competencia que debía estar liderada por mujeres (un 75% de los integrantes del equipo debían ser mujeres), nunca se le cerró la puerta a los hombres que quisieran participar. Es por esto que uno de nuestros sellos distintivos es éste; un equipo de desarrolladoras de videojuegos donde lideramos mujeres, sin embargo, nuestras puertas están abiertas a todos los hombres que deseen unirse.
+					</p>
 				</div>
-			</div>
-			<div class="imgdiv"><!--imagen derecha-->
-				<img class="gameimg" src="imagenes/gameplay4.png" alt="gameplay">
-			</div>
-			<div class="footer"><!--footer-->
-			<hr>
-			<div>Follow us on our social media! <a class="footerLink" href="https://www.instagram.com/bzztheballoons/" target="_blank">Instagram Bzz the Balloons</a>
-			© all rights reserved</div>
-			</div>
-		</div>
-</body>
+				<div class="medio espacioMob"><!--al medio-->
+					<p class="medioTitulo title">Equipo</p>
+					<div class="equipo">
+						<div class="rowDesktop">
+		 					<div class="column conHover">
+		 						<img src="imagenes/vale.jpeg" alt="foto Vale"><span class="name">Valentina Dupouy (Nervous Du)</span>
+		 					</div>
+		 					<div class="column conHover">
+		 						<img src="imagenes/caro.png" alt="foto Caro"><span class="name">Carolina Rojas</span>
+		 					</div>
+		 					<div class="column conHover">
+		 						<img src="imagenes/ale2.png" alt="foto Ale"><span class="name">Alexandra Marzuqa Giacaman</span>
+		 					</div>
+						</div>
+		    		<div class="rowDesktop">
+		 					<div class="column conHover">
+		 						<img src="imagenes/javi.jpeg" alt="foto Javi"><span class="name">Javiera González (Waririn)</span>
+		 					</div>
+		 					<div class="column conHover">
+		 						<img src="imagenes/paulo.png" alt="foto Paulo"><span class="name">Paulo Morales (Lyud)</span>
+		 					</div>
+		 				</div>
+				<!--equipo mobile-->
+						<div class="rowmob">
+							<div class="column">
+								<img src="imagenes/vale.jpeg" alt="foto Vale"><span class="name">Valentina Dupouy (Nervous Du)</span>
+							</div>
+		 					<div class="column">
+		 						<img src="imagenes/caro.png" alt="foto Caro"><span class="name">Carolina Rojas</span>
+		 					</div>
+		 					<div class="column">
+		 						<img src="imagenes/ale2.png" alt="foto Ale"><span class="name">Alexandra Marzuqa Giacaman</span>
+		 					</div>
+		 					<div class="column">
+		 						<img src="imagenes/javi.jpeg" alt="foto Javi"><span class="name">Javiera González (Waririn)</span>
+		 					</div>
+		 					<div class="column">
+		 						<img src="imagenes/paulo.png" alt="foto Paulo"><span class="name">Paulo Morales (Lyud)</span>
+		 					</div>
+		 				</div>
+					</div>
+				</div>
+			</div>		
+				<div class="col-12"><!--footer-->
+					<hr>
+					<footer>
+		        <p class="footer">Follow us on our social media! <a href="https://www.instagram.com/bzztheballoons/" target="_blank"><img src="imagenes/instagram.png" alt="logo instagram">Bzz the Balloons</a>
+					 © all rights reserved</p>
+		      </footer>
+				</div>	
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  </body>
 </html>
