@@ -45,6 +45,7 @@ a {
 	color: $colorTtl;
 	text-align: center;
 	padding-bottom: $diezPx;
+	font-size: map-get($fSize, s-l);
 	@media all and (min-width: $bpoint-md) and (max-width: $bpoint-xl){
 		font-size: map-get($fSize, m-xl);
 	}
@@ -92,7 +93,8 @@ div {
 		@include flexbox(space-evenly);
 	}
 	&.rowDesktop {
-		display: none;
+		display: grid;
+		grid-template-columns: repeat(1, 1fr);
 		@media all and (min-width: $bpoint-md) and (max-width: $bpoint-xl){
 			@include flexbox(space-between);
 		}
@@ -100,14 +102,16 @@ div {
 			@include flexbox(space-between);			
 		}
 	}
-	&.rowmob{
-		display: grid;
-		grid-template-columns: repeat(1, 1fr);
+	&.rowDesktopEq {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		flex-wrap: wrap;
 		@media all and (min-width: $bpoint-md) and (max-width: $bpoint-xl){
-			display: none;
+			@include flexbox(space-between);
 		}
 		@media all and (min-width: $bpoint-xl){
-			display: none;
+			@include flexbox(space-between);			
 		}
 	}
 	&.column{
@@ -123,32 +127,60 @@ div {
 			@include imgColumn(50px);
 		}
 	}
-	&.rowEquipo2 {
-		padding-top: 0;
+	&.card {
+		background-color: #5A4669;
+		border: none;
+		width: 50%;
+		margin: 20px;
+		.member {
+			width: 100%;
+			height: 80%;
+			align-items: center;
+			@media all and (min-width: $bpoint-md) and (max-width: $bpoint-xl){
+				width: 100%;
+				height: 100%;
+			}
+			@media all and (min-width: $bpoint-xl){
+				width: 100%;
+				height: 100%;
+			}
+		}			
 		@media all and (min-width: $bpoint-md) and (max-width: $bpoint-xl){
-			padding-top: 3rem;
+			width: 20rem;
+			margin-left: 5rem;
+			background-color: #5A4669;
+			border: none;	
 		}
 		@media all and (min-width: $bpoint-xl){
-			padding-top: 3rem;
+			width: 20rem;
+			margin-left: 5rem;
+			background-color: #5A4669;
+			border: none;
 		}
 	}
-	@media all and (min-width: $bpoint-md) and (max-width: $bpoint-xl){
-		&.columnEq {
-			@include flexColumn(280px);
-			img {
-				@include imgColumn(100px);
-			}
+	iframe {
+		&.mapa{
+		padding-left: 100px;
+		padding-right: 100px;
 		}
 	}
-	@media all and (min-width: $bpoint-xl){
-		&.columnEq {
-			@include flexColumn(480px);
-			img {
-				@include imgColumn(100px);
-			}
-		}
+	&.modal-content {
+		background-color: #5A4669;
 	}
-	
+}
+.btn {
+	width: 100%;
+	&.btnColor{
+		color: #5A4669;
+		background-color: $colorTtl;
+		border-color: $colorTtl;
+	}
+}
+.atrImg {
+	width: 100px;
+	height: 100px;
+	@include flexbox(center);
+	object-fit: scale-down;
 }
 .medioTitulo {
 	margin-bottom: 20px;
@@ -166,6 +198,7 @@ div {
 }
 .subtitle {
 	color: $colorSttl;
+	text-align: center;
 	font-size: map-get($fSize, s-s);
 	@media all and (min-width: $bpoint-md) and (max-width: $bpoint-xl){
 		font-size: map-get($fSize, m-m);
@@ -180,12 +213,13 @@ div {
 }
 span{
 	&.name{
-		font-size: map-get($fSize, s-s);
+		padding-top: 10px;
+		font-size: map-get($fSize, m-s);
 		@media all and (min-width: $bpoint-md) and (max-width: $bpoint-xl){
-			font-size: map-get($fSize, m-s);
+			font-size: map-get($fSize, m-m);
 		}
 		@media all and (min-width: $bpoint-xl){
-			font-size: map-get($fSize, m-m);
+			font-size: map-get($fSize, l-m);
 		}
 	}
 }
@@ -201,7 +235,6 @@ span{
 	}
 }
 .member {
-	object-fit: scale-down;
 	border-radius: 80px;
 	text-align: center;
 }
@@ -213,10 +246,10 @@ span{
 	"."
 	".";
 	justify-items: center;
-	grid-row-gap: $diezPx;
+	grid-row-gap: 20px;
 	img {
-		width: 100%;
-		height: 100%;
+		width: 80%;
+		height: 80%;
 		object-fit: contain;
 		border: 2px dashed #D9C7E8;
 	}
@@ -227,10 +260,10 @@ span{
 		". logo ."
 		". . .";
 		justify-items: center;
-		grid-row-gap: $diezPx;
+		grid-row-gap: 20px;
 		img {
-			width: 100%;
-			height: 100%;
+			width: 80%;
+			height: 80%;
 			object-fit: contain;
 			border: 2px dashed #D9C7E8;
 			&.logo {
@@ -242,15 +275,15 @@ span{
 	@media all and (min-width: $bpoint-xl){
 		display: grid;
 		grid-template-columns: repeat(3, 1fr);
-		gap: $diezPx;
+		gap: 20px;
 		grid-template-areas:
 		". . ."
 		". logo ."
 		". . .";
 		justify-items: center;
 		img {
-			width: 100%;
-			height: 100%;
+			width: 80%;
+			height: 80%;
 			object-fit: contain;
 			border: 2px dashed #D9C7E8;
 			&.logo {

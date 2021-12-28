@@ -8,6 +8,7 @@
 	justify-content: $jContent;
 	flex-wrap: wrap;
 	padding: $diezPx;
+	width: 100%;
 }
 @mixin flexColumn($height){
 	flex: 1;
