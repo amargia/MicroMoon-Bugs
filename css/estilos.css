@@ -167,20 +167,9 @@ div {
   div.card {
     background-color: #5A4669;
     border: none;
-    width: 50%;
     margin: 20px; }
     div.card .member {
-      width: 100%;
-      height: 80%;
-      align-items: center; }
-      @media all and (min-width: 768px) and (max-width: 1024px) {
-        div.card .member {
-          width: 100%;
-          height: 100%; } }
-      @media all and (min-width: 1024px) {
-        div.card .member {
-          width: 100%;
-          height: 100%; } }
+      border-radius: 80px; }
     @media all and (min-width: 768px) and (max-width: 1024px) {
       div.card {
         width: 20rem;
@@ -193,6 +182,11 @@ div {
         margin-left: 5rem;
         background-color: #5A4669;
         border: none; } }
+  div.card-body {
+    display: flex;
+    flex-direction: column; }
+    div.card-body .btn {
+      margin-top: auto; }
   div iframe.mapa {
     padding-left: 100px;
     padding-right: 100px; }
@@ -266,10 +260,6 @@ span.name {
     .cargo {
       padding-top: 10px; } }
 
-.member {
-  border-radius: 80px;
-  text-align: center; }
-
 /*arte desktop*/
 .contenedorimg {
   display: grid;
@@ -281,6 +271,8 @@ span.name {
     height: 80%;
     object-fit: contain;
     border: 2px dashed #D9C7E8; }
+    .contenedorimg img.logo {
+      border: none; }
   @media all and (min-width: 768px) and (max-width: 1024px) {
     .contenedorimg {
       display: grid;

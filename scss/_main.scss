@@ -130,20 +130,9 @@ div {
 	&.card {
 		background-color: #5A4669;
 		border: none;
-		width: 50%;
 		margin: 20px;
 		.member {
-			width: 100%;
-			height: 80%;
-			align-items: center;
-			@media all and (min-width: $bpoint-md) and (max-width: $bpoint-xl){
-				width: 100%;
-				height: 100%;
-			}
-			@media all and (min-width: $bpoint-xl){
-				width: 100%;
-				height: 100%;
-			}
+			border-radius: 80px;
 		}			
 		@media all and (min-width: $bpoint-md) and (max-width: $bpoint-xl){
 			width: 20rem;
@@ -156,6 +145,13 @@ div {
 			margin-left: 5rem;
 			background-color: #5A4669;
 			border: none;
+		}
+	}
+	&.card-body {
+		display: flex;
+		flex-direction: column;
+		.btn {
+			margin-top: auto;
 		}
 	}
 	iframe {
@@ -234,10 +230,6 @@ span{
 		padding-top: 10px;
 	}
 }
-.member {
-	border-radius: 80px;
-	text-align: center;
-}
 /*arte desktop*/
 .contenedorimg {
 	display: grid;
@@ -252,6 +244,9 @@ span{
 		height: 80%;
 		object-fit: contain;
 		border: 2px dashed #D9C7E8;
+		&.logo {
+			border: none;
+		}
 	}
 	@media all and (min-width: $bpoint-md) and (max-width: $bpoint-xl){
 		display: grid;
