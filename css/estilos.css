@@ -29,22 +29,22 @@
   font-size: 80px; }
 
 body {
-  background-color: #242434;
   font-family: 'Cultive Mono', monospace; }
 
 .navbarBg {
   background-color: #5A4669; }
 
 .conHover:hover {
-  transform: scale(1.1);
-  transition: all 200ms ease-in-out; }
+  transform: scale(1.1); }
 
 .navbar-nav .nav-item .nav-link {
   color: #D9C7E8; }
-  .navbar-nav .nav-item .nav-link:hover {
-    color: #242434;
-    transform: scale(1.1);
-    transition: all 200ms ease-in-out; }
+  @media all and (min-width: 992px) {
+    .navbar-nav .nav-item .nav-link {
+      transition: all 300ms ease-in-out; }
+      .navbar-nav .nav-item .nav-link:hover {
+        color: #242434;
+        transform: scale(1.2); } }
   .navbar-nav .nav-item .nav-link.active {
     color: #242434; }
 
@@ -75,10 +75,32 @@ a.nav-link {
     .logo {
       font-size: 80px; } }
 
+@keyframes anima {
+  0% {
+    top: 75%; }
+  100% {
+    top: 0;
+    transform: rotateY(360deg); } }
+
 div {
   color: #6C7C9C; }
+  div.caja {
+    width: 100%;
+    height: 50px;
+    position: relative; }
+    div.caja .anima {
+      left: 48%;
+      position: absolute;
+      width: 50px;
+      height: 50px;
+      animation-name: anima;
+      animation-iteration-count: 1;
+      animation-duration: 1s; }
+  div#fondo {
+    background-color: #242434; }
   div.dashed {
     padding: 10px;
+    padding-top: 20px;
     border-style: dashed;
     border-color: #D9C7E8;
     border-radius: 50px; }
@@ -131,20 +153,36 @@ div {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    flex-wrap: wrap; }
+    flex-wrap: wrap;
+    margin-left: 5rem;
+    margin-right: 5rem; }
     @media all and (min-width: 768px) and (max-width: 1024px) {
+      div.rowDesktopEq {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        padding: 10px;
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0; } }
+    @media all and (min-width: 1024px) {
       div.rowDesktopEq {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         flex-wrap: wrap;
         padding: 10px;
-        width: 100%; } }
-    @media all and (min-width: 1024px) {
-      div.rowDesktopEq {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0; } }
+  div.space {
+    margin-bottom: 4rem; }
+    @media all and (min-width: 768px) {
+      div.space {
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: space-evenly;
         flex-wrap: wrap;
         padding: 10px;
         width: 100%; } }
@@ -153,11 +191,14 @@ div {
     height: 180px;
     margin-bottom: 15px;
     line-height: 20px;
-    text-align: center;
-    transition: all 300ms ease-in-out; }
+    text-align: center; }
     div.column span {
       display: block;
       max-width: 100%; }
+      div.column span:hover {
+        color: #D9C7E8; }
+    div.column p:hover {
+      color: #D9C7E8; }
     div.column img {
       width: 127px;
       height: 134px;
@@ -167,38 +208,50 @@ div {
   div.card {
     background-color: #5A4669;
     border: none;
-    margin: 20px; }
+    margin-top: 3rem; }
     div.card .member {
       border-radius: 80px; }
+      div.card .member:hover {
+        border-color: #242434;
+        border: 5px solid; }
     @media all and (min-width: 768px) and (max-width: 1024px) {
       div.card {
         width: 20rem;
-        margin-left: 5rem;
         background-color: #5A4669;
-        border: none; } }
+        border: none;
+        margin-top: 4rem; } }
     @media all and (min-width: 1024px) {
       div.card {
         width: 20rem;
-        margin-left: 5rem;
         background-color: #5A4669;
-        border: none; } }
+        border: none;
+        margin-top: 4rem; } }
   div.card-body {
     display: flex;
-    flex-direction: column; }
+    flex-direction: column;
+    padding-left: 0;
+    padding-right: 0; }
     div.card-body .btn {
       margin-top: auto; }
-  div iframe.mapa {
-    padding-left: 100px;
-    padding-right: 100px; }
+  @media all and (min-width: 768px) {
+    div iframe.mapa {
+      padding-left: 100px;
+      padding-right: 100px; } }
   div.modal-content {
     background-color: #5A4669; }
 
 .btn {
   width: 100%; }
+  .btn:focus {
+    outline: none;
+    box-shadow: none; }
   .btn.btnColor {
     color: #5A4669;
     background-color: #D9C7E8;
     border-color: #D9C7E8; }
+    .btn.btnColor:hover {
+      color: #D9C7E8;
+      background-color: #242434; }
 
 .atrImg {
   width: 100px;
@@ -256,6 +309,8 @@ span.name {
 .cargo {
   text-align: center;
   font-weight: bold; }
+  .cargo:hover {
+    color: #242434; }
   @media all and (min-width: 1024px) {
     .cargo {
       padding-top: 10px; } }
@@ -270,7 +325,8 @@ span.name {
     width: 80%;
     height: 80%;
     object-fit: contain;
-    border: 2px dashed #D9C7E8; }
+    border: 2px dashed #D9C7E8;
+    transition: all 300ms ease-in-out; }
     .contenedorimg img.logo {
       border: none; }
   @media all and (min-width: 768px) and (max-width: 1024px) {
@@ -279,14 +335,9 @@ span.name {
       grid-template-areas: ". . ." ". logo ." ". . .";
       justify-items: center;
       grid-row-gap: 20px; }
-      .contenedorimg img {
-        width: 80%;
-        height: 80%;
-        object-fit: contain;
-        border: 2px dashed #D9C7E8; }
-        .contenedorimg img.logo {
-          grid-area: logo;
-          border: none; } }
+      .contenedorimg img.logo {
+        grid-area: logo;
+        border: none; } }
   @media all and (min-width: 1024px) {
     .contenedorimg {
       display: grid;
@@ -294,14 +345,9 @@ span.name {
       gap: 20px;
       grid-template-areas: ". . ." ". logo ." ". . .";
       justify-items: center; }
-      .contenedorimg img {
-        width: 80%;
-        height: 80%;
-        object-fit: contain;
-        border: 2px dashed #D9C7E8; }
-        .contenedorimg img.logo {
-          grid-area: logo;
-          border: none; } }
+      .contenedorimg img.logo {
+        grid-area: logo;
+        border: none; } }
 
 .arte {
   grid-column: span 1; }
@@ -318,7 +364,15 @@ span.name {
       height: 660px; } }
 
 /*fin grid arte desktop*/
+footer {
+  background-color: #5A4669;
+  text-align: left;
+  color: #242434;
+  height: 100%;
+  padding-bottom: 1rem; }
+
 .footer {
+  padding-left: 0.5rem;
   font-size: 11px; }
   @media all and (min-width: 768px) and (max-width: 1024px) {
     .footer {
@@ -332,7 +386,3 @@ span.name {
     .footer a img {
       width: 25px;
       height: 25px; }
-
-footer {
-  padding-left: 0.5rem;
-  text-align: left; }

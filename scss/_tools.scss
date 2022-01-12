@@ -1,7 +1,3 @@
-@mixin hover($transform,$transition){
-	transform: $transform;
-	transition: $transition;
-}
 @mixin flexbox($jContent){
 	display: flex;
 	flex-direction: row;

@@ -1,5 +1,4 @@
 body	{
-	background-color: $bgColor;
 	font-family: 'Cultive Mono', monospace;
 }
 .navbarBg {
@@ -7,16 +6,19 @@ body	{
 }
 .conHover {
 	&:hover{
-		@include hover(scale(1.1),all 200ms ease-in-out);
+		transform: scale(1.1);
 	}
 }
 .navbar-nav {
 	.nav-item{
 		.nav-link{
 			color: $colorTtl;
-			&:hover{
-				color: $bgColor;
-				@include hover(scale(1.1),all 200ms ease-in-out);
+			@media all and (min-width: 992px){
+				transition: all 300ms ease-in-out;
+				&:hover{
+					color: $bgColor;
+					transform: scale(1.2);
+				}
 			}
 			&.active{
 				color: $bgColor;
@@ -53,10 +55,37 @@ a {
 		font-size: map-get($fSize, l-xl);
 	}
 }
+@keyframes anima {
+	0% {
+		top: 75%;
+	}
+	100% {
+		top: 0;
+		transform: rotateY(360deg);
+	}
+}
 div {
 	color: $colorSttl;
+	&.caja {
+		width: 100%;
+		height: 50px;
+		position: relative;
+		.anima {
+			left: 48%;
+			position: absolute;
+			width: 50px;
+			height: 50px;
+			animation-name: anima;
+			animation-iteration-count: 1;
+			animation-duration: 1s;
+		}
+	}
+	&#fondo {
+		background-color: $bgColor;
+	}
 	&.dashed {
 		padding: $diezPx;
+		padding-top: 20px;
 		border-style: dashed;
 		border-color: $colorTtl;
 		border-radius: 50px;
@@ -107,19 +136,38 @@ div {
 		flex-direction: row;
 		justify-content: center;
 		flex-wrap: wrap;
+		margin-left: 5rem;
+		margin-right: 5rem;
 		@media all and (min-width: $bpoint-md) and (max-width: $bpoint-xl){
-			@include flexbox(space-between);
+			@include flexbox(space-evenly);
+			margin-left: 0;
+			margin-right: 0;
 		}
 		@media all and (min-width: $bpoint-xl){
-			@include flexbox(space-between);			
+			@include flexbox(space-between);
+			margin-left: 0;
+			margin-right: 0;			
+		}
+	}
+	&.space {
+		margin-bottom: 4rem;
+		@media all and (min-width: $bpoint-md){
+			@include flexbox(space-evenly);
 		}
 	}
 	&.column{
 		@include flexColumn(180px);
-		transition: all 300ms ease-in-out;
 		span{
 			display: block;
 			max-width: 100%;
+			&:hover {
+				color: $colorTtl;
+			}
+		}
+		p{
+			&:hover {
+				color: $colorTtl;
+			}
 		}
 		img{
 			width: 127px;
@@ -130,34 +178,42 @@ div {
 	&.card {
 		background-color: #5A4669;
 		border: none;
-		margin: 20px;
+		margin-top: 3rem;
 		.member {
 			border-radius: 80px;
+			&:hover {
+				border-color: $bgColor;
+				border: 5px solid;
+			}
 		}			
 		@media all and (min-width: $bpoint-md) and (max-width: $bpoint-xl){
 			width: 20rem;
-			margin-left: 5rem;
 			background-color: #5A4669;
-			border: none;	
+			border: none;
+			margin-top: 4rem;	
 		}
 		@media all and (min-width: $bpoint-xl){
 			width: 20rem;
-			margin-left: 5rem;
 			background-color: #5A4669;
 			border: none;
+			margin-top: 4rem;
 		}
 	}
 	&.card-body {
 		display: flex;
 		flex-direction: column;
+		padding-left: 0;
+		padding-right: 0;
 		.btn {
 			margin-top: auto;
 		}
 	}
 	iframe {
 		&.mapa{
-		padding-left: 100px;
-		padding-right: 100px;
+			@media all and (min-width: $bpoint-md){
+				padding-left: 100px;
+				padding-right: 100px;
+			}
 		}
 	}
 	&.modal-content {
@@ -166,10 +222,18 @@ div {
 }
 .btn {
 	width: 100%;
+	&:focus{
+		outline: none;
+		box-shadow: none;
+	}
 	&.btnColor{
 		color: #5A4669;
 		background-color: $colorTtl;
 		border-color: $colorTtl;
+		&:hover {
+			color: $colorTtl;
+			background-color: $bgColor;
+		}
 	}
 }
 .atrImg {
@@ -226,6 +290,9 @@ span{
 .cargo {
 	text-align: center;
 	font-weight: bold;
+	&:hover {
+		color: $bgColor;
+	}
 	@media all and (min-width: $bpoint-xl){
 		padding-top: 10px;
 	}
@@ -244,6 +311,7 @@ span{
 		height: 80%;
 		object-fit: contain;
 		border: 2px dashed #D9C7E8;
+		transition: all 300ms ease-in-out;
 		&.logo {
 			border: none;
 		}
@@ -257,10 +325,6 @@ span{
 		justify-items: center;
 		grid-row-gap: 20px;
 		img {
-			width: 80%;
-			height: 80%;
-			object-fit: contain;
-			border: 2px dashed #D9C7E8;
 			&.logo {
 				grid-area: logo;
 				border: none;
@@ -277,10 +341,6 @@ span{
 		". . .";
 		justify-items: center;
 		img {
-			width: 80%;
-			height: 80%;
-			object-fit: contain;
-			border: 2px dashed #D9C7E8;
 			&.logo {
 				grid-area: logo;
 				border: none;
@@ -301,7 +361,15 @@ span{
 	}
 }
 /*fin grid arte desktop*/
+footer {
+	background-color: #5A4669;
+	text-align: left;
+	color: $bgColor;
+	height: 100%;
+	padding-bottom: 1rem;
+}
 .footer{
+	padding-left: 0.5rem;
 	font-size: 11px;
 	@media all and (min-width: $bpoint-md) and (max-width: $bpoint-xl){
 		font-size: 13px;
@@ -317,8 +385,4 @@ span{
 			height: 25px;
 		}	
 	}
-}
-footer {
-	padding-left: 0.5rem;
-	text-align: left;
 }

@@ -43,195 +43,200 @@
 				</nav>
 			</div>
 		</div>
-		<!--logo principal "header"-->
-		<header>
-			<h1 class="logo"><img src="imagenes/logomicromoon.png" alt="logo tardígrado y luna">MicroMoon Bugs</h1>
-			<p class="title medioTitulo">Elige tu personaje</p>
-		</header>
-		<!--contenido página-->
-		<div class="row rowDesktopEq">
-			<div class="card col-12 col-md-4 col-xl-4">
-				<img class="member" src="imagenes/alecilla.jpeg" alt="foto ale cartoon">
-				<div class="card-body">
-					<h5 class="title cargo">Musician</h5>
-					<p class="subtitle nameColor">Tranquila, pero con TOC. Necesita mate para recargarse. Lo Gamer lo lleva en el alma. Re-encontrándose con la música.</p>
-					<p class="subtitle">"Necesito un estimulante (mate/café)"</p>
-					<!-- Button trigger modal -->
-					<button type="button" class="btn btnColor" data-bs-toggle="modal" data-bs-target="#aleModal">Atributos
-					</button>
-					<!-- Modal -->
-					<div class="modal fade" id="aleModal" tabindex="-1" aria-labelledby="aleModalLabel" aria-hidden="true">
-						<div class="modal-dialog">
-							<div class="modal-content">
-								<div class="modal-header">
-									<h5 class="modal-title title" id="exampleModalLabel">Ale</h5>
-									<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+		<div id="fondo">
+			<!--logo principal "header"-->
+			<header>
+				<h1 class="logo"><img src="imagenes/logomicromoon.png" alt="logo tardígrado y luna">MicroMoon Bugs</h1>
+				<h2 class="title medioTitulo">Elige tu personaje</h2>
+				<div class="caja">
+					<img class="anima" src="imagenes/equipo.png">
+				</div>
+			</header>
+			<!--contenido página-->
+			<div class="container-fluid">
+				<div class="row rowDesktopEq">
+					<div class="card col-12 col-md-4 col-xl-4">
+						<img class="member" src="imagenes/alecilla.jpeg" alt="foto ale cartoon">
+						<div class="card-body">
+							<h5 class="title cargo">Musician</h5>
+							<p class="subtitle nameColor">Tranquila, pero con TOC. Necesita mate para recargarse. Lo Gamer lo lleva en el alma. Re-encontrándose con la música.</p>
+							<p class="subtitle">"Necesito un estimulante (mate/café)"</p>
+							<!-- Button trigger modal -->
+							<button type="button" class="btn btnColor" data-bs-toggle="modal" data-bs-target="#aleModal">Atributos
+							</button>
+							<!-- Modal -->
+							<div class="modal fade" id="aleModal" tabindex="-1" aria-labelledby="aleModalLabel" aria-hidden="true">
+								<div class="modal-dialog">
+									<div class="modal-content">
+										<div class="modal-header">
+											<h5 class="modal-title title" id="exampleModalLabel">Ale</h5>
+											<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+										</div>
+										<div class="modal-body">
+											<img class="atrImg" src="imagenes/vida.png"><h5 class="subtitle">Error 404 Life not Found</h5>
+											<img class="atrImg" src="imagenes/personaje.png"><h5 class="subtitle">Tauren</h5>
+											<img class="atrImg" src="imagenes/intelecto.png"><h5 class="subtitle">100.000</h5>
+											<img class="atrImg" src="imagenes/espiritu.png"><h5 class="subtitle">Vegan</h5>
+											<img class="atrImg" src="imagenes/ataque.png"><h5 class="subtitle">10.000</h5>
+											<img class="atrImg" src="imagenes/defensa.png"><h5 class="subtitle">15.000</h5>
+											<img class="atrImg" src="imagenes/hobbie.png"><h5 class="subtitle">Buscar la forma de extinguir a la humanidad sin dañar a les animales ni el planeta</h5>					  
+										</div>
+										<div class="modal-footer">
+											<button type="button" class="btn btnColor" data-bs-dismiss="modal">Cerrar</button>
+										</div>
+									</div>
 								</div>
-								<div class="modal-body">
-									<img class="atrImg" src="imagenes/vida.png"><h5 class="subtitle">Error 404 Life not Found</h5>
-									<img class="atrImg" src="imagenes/personaje.png"><h5 class="subtitle">Tauren</h5>
-									<img class="atrImg" src="imagenes/intelecto.png"><h5 class="subtitle">100.000</h5>
-									<img class="atrImg" src="imagenes/espiritu.png"><h5 class="subtitle">Vegan</h5>
-									<img class="atrImg" src="imagenes/ataque.png"><h5 class="subtitle">10.000</h5>
-									<img class="atrImg" src="imagenes/defensa.png"><h5 class="subtitle">15.000</h5>
-									<img class="atrImg" src="imagenes/hobbie.png"><h5 class="subtitle">Buscar la forma de extinguir a la humanidad sin dañar a les animales ni el planeta</h5>					  
+							</div>
+						</div>
+					</div>
+					<div class="card col-12 col-md-4 col-xl-4">
+						<img class="member" src="imagenes/valecilla.jpeg" alt="foto vale cartoon">
+						<div class="card-body">
+							<h5 class="title cargo">Game Designer</h5>
+							<p class="subtitle nameColor">Música frustrada. Pasión por los juegos y matea. Bebé del grupo y la que nos juntó.</p>
+							<p class="subtitle">"Los TKM"</p>
+							<!-- Button trigger modal -->
+							<button type="button" class="btn btnColor" data-bs-toggle="modal" data-bs-target="#valeModal">
+							  Atributos
+							</button>
+							<!-- Modal -->
+							<div class="modal fade" id="valeModal" tabindex="-1" aria-labelledby="valeModalLabel" aria-hidden="true">
+								<div class="modal-dialog">
+									<div class="modal-content">
+										<div class="modal-header">
+											<h5 class="modal-title title" id="exampleModalLabel">Nervous Du</h5>
+											<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+										</div>
+										<div class="modal-body">
+											<img class="atrImg" src="imagenes/vida.png"><h5 class="subtitle">*Activar modo ahorro*</h5>
+											<img class="atrImg" src="imagenes/personaje.png"><h5 class="subtitle">Goblin</h5>
+											<img class="atrImg" src="imagenes/intelecto.png"><h5 class="subtitle">100.000</h5>
+											<img class="atrImg" src="imagenes/espiritu.png"><h5 class="subtitle">Blanco/Negro</h5>
+											<img class="atrImg" src="imagenes/ataque.png"><h5 class="subtitle">5.000</h5>
+											<img class="atrImg" src="imagenes/defensa.png"><h5 class="subtitle">10.000</h5>
+											<img class="atrImg" src="imagenes/hobbie.png"><h5 class="subtitle">Aprender música y ñoñear en Wwise y Unity con Ale</h5>
+										</div>
+										<div class="modal-footer">
+											<button type="button" class="btn btnColor" data-bs-dismiss="modal">Cerrar</button>
+										</div>
+									</div>
 								</div>
-								<div class="modal-footer">
-									<button type="button" class="btn btnColor" data-bs-dismiss="modal">Cerrar</button>
+							</div>
+						</div>
+					</div>
+					<div class="card col-12 col-md-4 col-xl-4">
+						<img class="member" src="imagenes/caritito.jpeg" alt="foto caro cartoon">
+						<div class="card-body">
+							<h5 class="title cargo">Programmer</h5>
+							<p class="subtitle nameColor">Madre superiora. Programadora de excelencia buscando su lugar en el mundo de juegos indie. En su área tiene la última palabra.</p>
+							<p class="subtitle">"No le pongamos más y lanzemos el juego pronto"</p>
+							<!-- Button trigger modal -->
+							<button type="button" class="btn btnColor" data-bs-toggle="modal" data-bs-target="#caroModal">
+							  Atributos
+							</button>
+							<!-- Modal -->
+							<div class="modal fade" id="caroModal" tabindex="-1" aria-labelledby="caroModalLabel" aria-hidden="true">
+								<div class="modal-dialog">
+									<div class="modal-content">
+										<div class="modal-header">
+											<h5 class="modal-title title" id="exampleModalLabel">Caro</h5>
+											<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+										</div>
+										<div class="modal-body">
+											<img class="atrImg" src="imagenes/vida.png"><h5 class="subtitle">*Cargando*</h5>
+											<img class="atrImg" src="imagenes/personaje.png"><h5 class="subtitle">Elfo de sangre</h5>
+											<img class="atrImg" src="imagenes/intelecto.png"><h5 class="subtitle">100.000</h5>
+											<img class="atrImg" src="imagenes/espiritu.png"><h5 class="subtitle">Error 404 espíritu not found</h5>
+											<img class="atrImg" src="imagenes/ataque.png"><h5 class="subtitle">50.000</h5>
+											<img class="atrImg" src="imagenes/defensa.png"><h5 class="subtitle">50.000</h5>
+											<img class="atrImg" src="imagenes/hobbie.png"><h5 class="subtitle">Dejar de darle más vueltas al juego de la abeja y lanzarlo rápido a $0.99</h5>
+										</div>
+										<div class="modal-footer">
+											<button type="button" class="btn btnColor" data-bs-dismiss="modal">Cerrar</button>
+										</div>
+									</div>
+								</div>
+							</div>			  
+						</div>
+					</div>
+				</div>
+				<div class="row rowDesktopEq space">
+					<div class="card col-12 col-md-6 col-xl-6">
+						<img class="member" src="imagenes/javicilla.jpeg" alt="foto javi cartoon">
+						<div class="card-body">
+							<h5 class="title cargo">2D Artist</h5>
+							<p class="subtitle nameColor">Se hace no más y es una genia. Jugadora profesional de Genshin Impact. Habla muchísimo cuando se trata de Genshin, sino no se percibe su presencia.</p>
+							<p class="subtitle">"Jueguen Genshin"</p>
+							<!-- Button trigger modal -->
+							<button type="button" class="btn btnColor" data-bs-toggle="modal" data-bs-target="#javiModal">
+							  Atributos
+							</button>
+							<!-- Modal -->
+							<div class="modal fade" id="javiModal" tabindex="-1" aria-labelledby="javiModalLabel" aria-hidden="true">
+								<div class="modal-dialog">
+									<div class="modal-content">
+										<div class="modal-header">
+											<h5 class="modal-title title" id="exampleModalLabel">Javi</h5>
+											<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+										</div>
+										<div class="modal-body">
+											<img class="atrImg" src="imagenes/vida.png"><h5 class="subtitle">Genshin-dependiente</h5>
+											<img class="atrImg" src="imagenes/personaje.png"><h5 class="subtitle">Keking</h5>
+											<img class="atrImg" src="imagenes/intelecto.png"><h5 class="subtitle">100.000 (pero se hace)</h5>
+											<img class="atrImg" src="imagenes/espiritu.png"><h5 class="subtitle">All Hail Genshin Impact</h5>
+											<img class="atrImg" src="imagenes/ataque.png"><h5 class="subtitle">500</h5>
+											<img class="atrImg" src="imagenes/defensa.png"><h5 class="subtitle">500</h5>
+											<img class="atrImg" src="imagenes/hobbie.png"><h5 class="subtitle">En camino a llegar al nivel máximo en Genshin e incentivar a que todo el mundo lo juegue</h5>
+										</div>
+										<div class="modal-footer">
+											<button type="button" class="btn btnColor" data-bs-dismiss="modal">Cerrar</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="card cardRight col-12 col-md-6 col-xl-6">
+						<img class="member" src="imagenes/divo.jpeg" alt="foto paulo cartoon">
+						<div class="card-body">
+							<h5 class="title cargo">Pixel Artist</h5>
+							<p class="subtitle nameColor">Artista más cotizado de Chile. Divo por excelencia. Bendito entre todas las mujeres. Un anciano en cuerpo de niño.</p>
+							<p class="subtitle">*No sé porqué sigo aquí* (No lo dice, lo piensa)</p>
+							<!-- Button trigger modal -->
+							<button type="button" class="btn btnColor" data-bs-toggle="modal" data-bs-target="#divoModal">
+							  Atributos
+							</button>
+							<!-- Modal -->
+							<div class="modal fade" id="divoModal" tabindex="-1" aria-labelledby="divoModalLabel" aria-hidden="true">
+								<div class="modal-dialog">
+									<div class="modal-content">
+										<div class="modal-header">
+											<h5 class="modal-title title" id="eModalLabel">Divo</h5>
+											<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+										</div>
+										<div class="modal-body">
+											<img class="atrImg" src="imagenes/vida.png"><h5 class="subtitle">10.000</h5>
+											<img class="atrImg" src="imagenes/personaje.png"><h5 class="subtitle">Draenei</h5>
+											<img class="atrImg" src="imagenes/intelecto.png"><h5 class="subtitle">100.000</h5>
+											<img class="atrImg" src="imagenes/espiritu.png"><h5 class="subtitle">Divo</h5>
+											<img class="atrImg" src="imagenes/ataque.png"><h5 class="subtitle">1.000</h5>
+											<img class="atrImg" src="imagenes/defensa.png"><h5 class="subtitle">1.000</h5>
+											<img class="atrImg" src="imagenes/hobbie.png"><h5 class="subtitle">Sobrevivir en un mundo de gente mortal y no diva como él.</h5>
+										</div>
+										<div class="modal-footer">
+											<button type="button" class="btn btnColor" data-bs-dismiss="modal">Cerrar</button>
+										</div>
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-			</div>
-			<div class="card cardMiddle col-12 col-md-4 col-xl-4">
-				<img class="member" src="imagenes/valecilla.jpeg" alt="foto vale cartoon">
-				<div class="card-body">
-					<h5 class="title cargo">Game Designer</h5>
-					<p class="subtitle nameColor">Música frustrada. Pasión por los juegos y matea. Bebé del grupo y la que nos juntó.</p>
-					<p class="subtitle">"Los TKM"</p>
-					<!-- Button trigger modal -->
-					<button type="button" class="btn btnColor" data-bs-toggle="modal" data-bs-target="#valeModal">
-					  Atributos
-					</button>
-					<!-- Modal -->
-					<div class="modal fade" id="valeModal" tabindex="-1" aria-labelledby="valeModalLabel" aria-hidden="true">
-						<div class="modal-dialog">
-							<div class="modal-content">
-								<div class="modal-header">
-									<h5 class="modal-title title" id="exampleModalLabel">Nervous Du</h5>
-									<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-								</div>
-								<div class="modal-body">
-									<img class="atrImg" src="imagenes/vida.png"><h5 class="subtitle">*Activar modo ahorro*</h5>
-									<img class="atrImg" src="imagenes/personaje.png"><h5 class="subtitle">Goblin</h5>
-									<img class="atrImg" src="imagenes/intelecto.png"><h5 class="subtitle">100.000</h5>
-									<img class="atrImg" src="imagenes/espiritu.png"><h5 class="subtitle">Blanco/Negro</h5>
-									<img class="atrImg" src="imagenes/ataque.png"><h5 class="subtitle">5.000</h5>
-									<img class="atrImg" src="imagenes/defensa.png"><h5 class="subtitle">10.000</h5>
-									<img class="atrImg" src="imagenes/hobbie.png"><h5 class="subtitle">Aprender música y ñoñear en Wwise y Unity con Ale</h5>
-								</div>
-								<div class="modal-footer">
-									<button type="button" class="btn btnColor" data-bs-dismiss="modal">Cerrar</button>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="card cardRight col-12 col-md-4 col-xl-4">
-				<img class="member" src="imagenes/caritito.jpeg" alt="foto caro cartoon">
-				<div class="card-body">
-					<h5 class="title cargo">Programmer</h5>
-					<p class="subtitle nameColor">Madre superiora. Programadora de excelencia buscando su lugar en el mundo de juegos indie. En su área tiene la última palabra.</p>
-					<p class="subtitle">"No le pongamos más y lanzemos el juego pronto"</p>
-					<!-- Button trigger modal -->
-					<button type="button" class="btn btnColor" data-bs-toggle="modal" data-bs-target="#caroModal">
-					  Atributos
-					</button>
-					<!-- Modal -->
-					<div class="modal fade" id="caroModal" tabindex="-1" aria-labelledby="caroModalLabel" aria-hidden="true">
-						<div class="modal-dialog">
-							<div class="modal-content">
-								<div class="modal-header">
-									<h5 class="modal-title title" id="exampleModalLabel">Caro</h5>
-									<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-								</div>
-								<div class="modal-body">
-									<img class="atrImg" src="imagenes/vida.png"><h5 class="subtitle">Días de semana: 10.000. Fines de semana: 1.000</h5>
-									<img class="atrImg" src="imagenes/personaje.png"><h5 class="subtitle">Elfo de sangre</h5>
-									<img class="atrImg" src="imagenes/intelecto.png"><h5 class="subtitle">100.000</h5>
-									<img class="atrImg" src="imagenes/espiritu.png"><h5 class="subtitle">Error 404 espíritu not found</h5>
-									<img class="atrImg" src="imagenes/ataque.png"><h5 class="subtitle">50.000</h5>
-									<img class="atrImg" src="imagenes/defensa.png"><h5 class="subtitle">50.000</h5>
-									<img class="atrImg" src="imagenes/hobbie.png"><h5 class="subtitle">Dejar de darle más vueltas al juego de la abeja y lanzarlo rápido a $0.99</h5>
-								</div>
-								<div class="modal-footer">
-									<button type="button" class="btn btnColor" data-bs-dismiss="modal">Cerrar</button>
-								</div>
-							</div>
-						</div>
-					</div>			  
-				</div>
-			</div>
-		</div>
-		<div class="row rowDesktopEq">
-			<div class="card col-12 col-md-6 col-xl-6">
-				<img class="member" src="imagenes/javicilla.jpeg" alt="foto javi cartoon">
-				<div class="card-body">
-					<h5 class="title cargo">2D Artist</h5>
-					<p class="subtitle nameColor">Se hace no más y es una genia. Jugadora profesional de Genshin Impact. Habla muchísimo cuando se trata de Genshin, sino no se percibe su presencia.</p>
-					<p class="subtitle">"Jueguen Genshin"</p>
-					<!-- Button trigger modal -->
-					<button type="button" class="btn btnColor" data-bs-toggle="modal" data-bs-target="#javiModal">
-					  Atributos
-					</button>
-					<!-- Modal -->
-					<div class="modal fade" id="javiModal" tabindex="-1" aria-labelledby="javiModalLabel" aria-hidden="true">
-						<div class="modal-dialog">
-							<div class="modal-content">
-								<div class="modal-header">
-									<h5 class="modal-title title" id="exampleModalLabel">Javi</h5>
-									<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-								</div>
-								<div class="modal-body">
-									<img class="atrImg" src="imagenes/vida.png"><h5 class="subtitle">Genshin-dependiente</h5>
-									<img class="atrImg" src="imagenes/personaje.png"><h5 class="subtitle">Keking</h5>
-									<img class="atrImg" src="imagenes/intelecto.png"><h5 class="subtitle">100.000 (pero se hace)</h5>
-									<img class="atrImg" src="imagenes/espiritu.png"><h5 class="subtitle">All Hail Genshin Impact</h5>
-									<img class="atrImg" src="imagenes/ataque.png"><h5 class="subtitle">500</h5>
-									<img class="atrImg" src="imagenes/defensa.png"><h5 class="subtitle">500</h5>
-									<img class="atrImg" src="imagenes/hobbie.png"><h5 class="subtitle">En camino a llegar al nivel máximo en Genshin e incentivar a que todo el mundo lo juegue</h5>
-								</div>
-								<div class="modal-footer">
-									<button type="button" class="btn btnColor" data-bs-dismiss="modal">Cerrar</button>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="card cardRight col-12 col-md-6 col-xl-6">
-				<img class="member" src="imagenes/divo.jpeg" alt="foto paulo cartoon">
-				<div class="card-body">
-					<h5 class="title cargo">Pixel Artist</h5>
-					<p class="subtitle nameColor">Artista más cotizado de Chile. Divo por excelencia. Bendito entre todas las mujeres. Un anciano en cuerpo de niño.</p>
-					<p class="subtitle">*No sé porqué sigo aquí* (No lo dice, lo piensa)</p>
-					<!-- Button trigger modal -->
-					<button type="button" class="btn btnColor" data-bs-toggle="modal" data-bs-target="#divoModal">
-					  Atributos
-					</button>
-					<!-- Modal -->
-					<div class="modal fade" id="divoModal" tabindex="-1" aria-labelledby="divoModalLabel" aria-hidden="true">
-						<div class="modal-dialog">
-							<div class="modal-content">
-								<div class="modal-header">
-									<h5 class="modal-title title" id="eModalLabel">Divo</h5>
-									<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-								</div>
-								<div class="modal-body">
-									<img class="atrImg" src="imagenes/vida.png"><h5 class="subtitle">10.000</h5>
-									<img class="atrImg" src="imagenes/personaje.png"><h5 class="subtitle">Draenei</h5>
-									<img class="atrImg" src="imagenes/intelecto.png"><h5 class="subtitle">100.000</h5>
-									<img class="atrImg" src="imagenes/espiritu.png"><h5 class="subtitle">Divo</h5>
-									<img class="atrImg" src="imagenes/ataque.png"><h5 class="subtitle">1.000</h5>
-									<img class="atrImg" src="imagenes/defensa.png"><h5 class="subtitle">1.000</h5>
-									<img class="atrImg" src="imagenes/hobbie.png"><h5 class="subtitle">Sobrevivir en un mundo de gente mortal y no diva como él.</h5>
-								</div>
-								<div class="modal-footer">
-									<button type="button" class="btn btnColor" data-bs-dismiss="modal">Cerrar</button>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>					
-		<div class="col-12"><!--footer-->
-			<hr>
-			<footer>
-				<p class="footer">Follow us on our social media! <a href="https://www.instagram.com/bzztheballoons/" target="_blank"><img src="imagenes/instagram.png" alt="logo instagram">Bzz the Balloons</a>
-				© all rights reserved</p>
+			</div>					
+			<footer class="col-12"><!--footer-->
+				<hr>
+					<span class="footer">Follow us on our social media! <a href="https://www.instagram.com/bzztheballoons/" target="_blank"><img src="imagenes/instagram.png" alt="logo instagram">Bzz the Balloons</a>
+					© all rights reserved</span>
 			</footer>
 		</div>
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
