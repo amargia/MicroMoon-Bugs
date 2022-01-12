@@ -66,6 +66,9 @@ a {
 }
 div {
 	color: $colorSttl;
+	&#fondo {
+		background-color: $bgColor;
+	}	
 	&.caja {
 		width: 100%;
 		height: 50px;
@@ -80,15 +83,32 @@ div {
 			animation-duration: 1s;
 		}
 	}
-	&#fondo {
-		background-color: $bgColor;
-	}
 	&.dashed {
 		padding: $diezPx;
 		padding-top: 20px;
 		border-style: dashed;
 		border-color: $colorTtl;
 		border-radius: 50px;
+	}
+	&.separador {
+		height: 1px;
+		max-width: 100%;
+		width: 150px;
+		display: inline-block;
+		justify-content: center;
+		position: relative;
+		margin: 5px;
+		background-color: $colorTtl;
+		&:before {
+			content: "";
+			width: 10px;
+			height: 10px;
+			top: -4px;
+			background-color: $colorTtl;
+			position: absolute;
+			left: calc(50% - 5px);
+			transform: rotateZ(45deg);
+		}
 	}
 	p {
 		&.izquierdaTitulo{
@@ -160,9 +180,6 @@ div {
 		span{
 			display: block;
 			max-width: 100%;
-			&:hover {
-				color: $colorTtl;
-			}
 		}
 		p{
 			&:hover {
@@ -204,35 +221,101 @@ div {
 		flex-direction: column;
 		padding-left: 0;
 		padding-right: 0;
+		h5 {
+			text-align: center;
+			font-weight: bold;
+		}
 		.btn {
 			margin-top: auto;
-		}
-	}
-	iframe {
-		&.mapa{
-			@media all and (min-width: $bpoint-md){
-				padding-left: 100px;
-				padding-right: 100px;
+			width: 100%;
+			&:focus{
+				outline: none;
+				box-shadow: none;
+			}
+			&.btnColor{
+				color: #5A4669;
+				background-color: $colorTtl;
+				border-color: $colorTtl;
+				&:hover {
+					color: $colorTtl;
+					background-color: $bgColor;
+				}
 			}
 		}
 	}
 	&.modal-content {
 		background-color: #5A4669;
 	}
-}
-.btn {
-	width: 100%;
-	&:focus{
-		outline: none;
-		box-shadow: none;
+	/*arte desktop*/
+	&.contenedorimg {
+		display: grid;
+		grid-template-areas:
+		"."
+		"."
+		".";
+		justify-items: center;
+		grid-row-gap: 20px;
+		img {
+			width: 80%;
+			height: 80%;
+			object-fit: contain;
+			border: 2px dashed #D9C7E8;
+			transition: all 300ms ease-in-out;
+			&.logo {
+				border: none;
+			}
+		}
+		@media all and (min-width: $bpoint-md) and (max-width: $bpoint-xl){
+			display: grid;
+			grid-template-areas:
+			". . ."
+			". logo ."
+			". . .";
+			justify-items: center;
+			grid-row-gap: 20px;
+			img {
+				&.logo {
+					grid-area: logo;
+					border: none;
+				}
+			}
+		}
+		@media all and (min-width: $bpoint-xl){
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			gap: 20px;
+			grid-template-areas:
+			". . ."
+			". logo ."
+			". . .";
+			justify-items: center;
+			img {
+				&.logo {
+					grid-area: logo;
+					border: none;
+				}			
+			}		
+		}
 	}
-	&.btnColor{
-		color: #5A4669;
-		background-color: $colorTtl;
-		border-color: $colorTtl;
-		&:hover {
-			color: $colorTtl;
-			background-color: $bgColor;
+	.arte {
+		grid-column: span 1;
+		@media all and (min-width: $bpoint-md) and (max-width: $bpoint-xl){
+			grid-column: span 1;
+			@include medidaImgArte;
+			object-fit: scale-down;
+		}
+		@media all and (min-width: $bpoint-xl){
+			grid-column: span 1;
+			@include medidaImgArte;	
+		}
+	}
+	/*fin grid arte desktop*/
+	iframe {
+		&.mapa{
+			@media all and (min-width: $bpoint-md){
+				padding-left: 100px;
+				padding-right: 100px;
+			}
 		}
 	}
 }
@@ -267,6 +350,9 @@ div {
 		font-size: map-get($fSize, l-m);
 	}
 }
+.frase {
+	margin-top: auto;
+}
 .subtitleJuegos {
 	@extend .subtitle;
 	text-align: left;
@@ -284,83 +370,20 @@ span{
 	}
 }
 .nameColor {
-	color: $colorTtl;
+	color: $bgColor;
 	text-align: center;
 }
 .cargo {
 	text-align: center;
 	font-weight: bold;
-	&:hover {
-		color: $bgColor;
-	}
-	@media all and (min-width: $bpoint-xl){
-		padding-top: 10px;
-	}
-}
-/*arte desktop*/
-.contenedorimg {
-	display: grid;
-	grid-template-areas:
-	"."
-	"."
-	".";
-	justify-items: center;
-	grid-row-gap: 20px;
-	img {
-		width: 80%;
-		height: 80%;
-		object-fit: contain;
-		border: 2px dashed #D9C7E8;
-		transition: all 300ms ease-in-out;
-		&.logo {
-			border: none;
-		}
-	}
+	font-size: map-get($fSize, s-s);
 	@media all and (min-width: $bpoint-md) and (max-width: $bpoint-xl){
-		display: grid;
-		grid-template-areas:
-		". . ."
-		". logo ."
-		". . .";
-		justify-items: center;
-		grid-row-gap: 20px;
-		img {
-			&.logo {
-				grid-area: logo;
-				border: none;
-			}
-		}
+		font-size: map-get($fSize, m-s);
 	}
 	@media all and (min-width: $bpoint-xl){
-		display: grid;
-		grid-template-columns: repeat(3, 1fr);
-		gap: 20px;
-		grid-template-areas:
-		". . ."
-		". logo ."
-		". . .";
-		justify-items: center;
-		img {
-			&.logo {
-				grid-area: logo;
-				border: none;
-			}			
-		}		
+		font-size: 18px;
 	}
 }
-.arte {
-	grid-column: span 1;
-	@media all and (min-width: $bpoint-md) and (max-width: $bpoint-xl){
-		grid-column: span 1;
-		@include medidaImgArte;
-		object-fit: scale-down;
-	}
-	@media all and (min-width: $bpoint-xl){
-		grid-column: span 1;
-		@include medidaImgArte;	
-	}
-}
-/*fin grid arte desktop*/
 footer {
 	background-color: #5A4669;
 	text-align: left;
