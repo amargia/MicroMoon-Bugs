@@ -7,6 +7,7 @@ body	{
 .conHover {
 	&:hover{
 		transform: scale(1.1);
+		box-shadow: 10px 10px 30px #121217, -10px -10px 30px #121217;
 	}
 }
 .navbar-nav {
@@ -90,26 +91,6 @@ div {
 		border-color: $colorTtl;
 		border-radius: 50px;
 	}
-	&.separador {
-		height: 1px;
-		max-width: 100%;
-		width: 150px;
-		display: inline-block;
-		justify-content: center;
-		position: relative;
-		margin: 5px;
-		background-color: $colorTtl;
-		&:before {
-			content: "";
-			width: 10px;
-			height: 10px;
-			top: -4px;
-			background-color: $colorTtl;
-			position: absolute;
-			left: calc(50% - 5px);
-			transform: rotateZ(45deg);
-		}
-	}
 	p {
 		&.izquierdaTitulo{
 			padding: 0.5rem;
@@ -190,9 +171,30 @@ div {
 			width: 127px;
 			height: 134px;
 			@include imgColumn(50px);
+			transition: all 300ms ease-in-out;
+		}
+		.separador {
+			height: 1px;
+			max-width: 100%;
+			width: 150px;
+			display: inline-block;
+			justify-content: center;
+			position: relative;
+			margin: 5px;
+			background-color: $colorTtl;
+			&:before {
+				content: "";
+				width: 10px;
+				height: 10px;
+				top: -4px;
+				background-color: $colorTtl;
+				position: absolute;
+				left: calc(50% - 5px);
+				transform: rotateZ(45deg);
+			}
 		}
 	}
-	&.card {
+	&.card { //*equipo
 		background-color: #5A4669;
 		border: none;
 		margin-top: 3rem;
@@ -205,14 +207,10 @@ div {
 		}			
 		@media all and (min-width: $bpoint-md) and (max-width: $bpoint-xl){
 			width: 20rem;
-			background-color: #5A4669;
-			border: none;
 			margin-top: 4rem;	
 		}
 		@media all and (min-width: $bpoint-xl){
 			width: 20rem;
-			background-color: #5A4669;
-			border: none;
 			margin-top: 4rem;
 		}
 	}
@@ -245,6 +243,28 @@ div {
 	}
 	&.modal-content {
 		background-color: #5A4669;
+	}
+	&.cardJuegos { //*juegos
+		@media all and (min-width: $bpoint-md){
+			width: 35rem;
+		}
+		.carousel {
+			width: auto;
+			height: 300px;
+			.imgC {
+				display: block;
+				width: 100%;
+				height: 275px;
+				object-fit: scale-down;
+				@media all and (min-width: $bpoint-md){
+				height: 300px;
+				}
+			}
+		}
+		.play {
+			width: 25px;
+			height: 25px;
+		}
 	}
 	/*arte desktop*/
 	&.contenedorimg {

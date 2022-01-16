@@ -35,7 +35,8 @@ body {
   background-color: #5A4669; }
 
 .conHover:hover {
-  transform: scale(1.1); }
+  transform: scale(1.1);
+  box-shadow: 10px 10px 30px #121217, -10px -10px 30px #121217; }
 
 .navbar-nav .nav-item .nav-link {
   color: #D9C7E8; }
@@ -106,24 +107,6 @@ div {
     border-style: dashed;
     border-color: #D9C7E8;
     border-radius: 50px; }
-  div.separador {
-    height: 1px;
-    max-width: 100%;
-    width: 150px;
-    display: inline-block;
-    justify-content: center;
-    position: relative;
-    margin: 5px;
-    background-color: #D9C7E8; }
-    div.separador:before {
-      content: "";
-      width: 10px;
-      height: 10px;
-      top: -4px;
-      background-color: #D9C7E8;
-      position: absolute;
-      left: calc(50% - 5px);
-      transform: rotateZ(45deg); }
   div p.izquierdaTitulo {
     padding: 0.5rem; }
   div p.top {
@@ -222,7 +205,26 @@ div {
       height: 134px;
       max-width: 80%;
       max-height: 80%;
-      border-radius: 50px; }
+      border-radius: 50px;
+      transition: all 300ms ease-in-out; }
+    div.column .separador {
+      height: 1px;
+      max-width: 100%;
+      width: 150px;
+      display: inline-block;
+      justify-content: center;
+      position: relative;
+      margin: 5px;
+      background-color: #D9C7E8; }
+      div.column .separador:before {
+        content: "";
+        width: 10px;
+        height: 10px;
+        top: -4px;
+        background-color: #D9C7E8;
+        position: absolute;
+        left: calc(50% - 5px);
+        transform: rotateZ(45deg); }
   div.card {
     background-color: #5A4669;
     border: none;
@@ -235,14 +237,10 @@ div {
     @media all and (min-width: 768px) and (max-width: 1024px) {
       div.card {
         width: 20rem;
-        background-color: #5A4669;
-        border: none;
         margin-top: 4rem; } }
     @media all and (min-width: 1024px) {
       div.card {
         width: 20rem;
-        background-color: #5A4669;
-        border: none;
         margin-top: 4rem; } }
   div.card-body {
     display: flex;
@@ -267,6 +265,23 @@ div {
           background-color: #242434; }
   div.modal-content {
     background-color: #5A4669; }
+  @media all and (min-width: 768px) {
+    div.cardJuegos {
+      width: 35rem; } }
+  div.cardJuegos .carousel {
+    width: auto;
+    height: 300px; }
+    div.cardJuegos .carousel .imgC {
+      display: block;
+      width: 100%;
+      height: 275px;
+      object-fit: scale-down; }
+      @media all and (min-width: 768px) {
+        div.cardJuegos .carousel .imgC {
+          height: 300px; } }
+  div.cardJuegos .play {
+    width: 25px;
+    height: 25px; }
   div.contenedorimg {
     display: grid;
     grid-template-areas: "." "." ".";
