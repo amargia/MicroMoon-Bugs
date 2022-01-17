@@ -330,11 +330,36 @@ div {
 		}
 	}
 	/*fin grid arte desktop*/
-	iframe {
-		&.mapa{
-			@media all and (min-width: $bpoint-md){
-				padding-left: 100px;
-				padding-right: 100px;
+	&.form-floating {
+		#floatingTextarea2 {
+			height: 300px;
+		}
+	}
+	.form-control, .form-select, &.form-floating {
+		background-color: $bgColor;
+		color: $colorTtl;
+		border-color: $colorSttl;
+		border-top: none;
+		border-right: none;
+		border-left: none;
+		&:focus{
+			background-color: $bgColor;
+			color: $colorTtl;
+			outline: none;
+			box-shadow: none;
+		}
+		&::placeholder {
+			color: $colorTtl;
+		}
+	}
+	&.ratio {
+		margin-top: 5rem;
+		iframe {
+			&.mapa{
+				@media all and (min-width: $bpoint-md){
+					padding-left: 100px;
+					padding-right: 100px;
+				}
 			}
 		}
 	}
@@ -372,10 +397,6 @@ div {
 }
 .frase {
 	margin-top: auto;
-}
-.subtitleJuegos {
-	@extend .subtitle;
-	text-align: left;
 }
 span{
 	&.name{

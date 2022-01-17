@@ -327,10 +327,28 @@ div {
         grid-column: span 1;
         width: 360px;
         height: 660px; } }
-  @media all and (min-width: 768px) {
-    div iframe.mapa {
-      padding-left: 100px;
-      padding-right: 100px; } }
+  div.form-floating #floatingTextarea2 {
+    height: 300px; }
+  div .form-control, div .form-select, div.form-floating {
+    background-color: #242434;
+    color: #D9C7E8;
+    border-color: #6C7C9C;
+    border-top: none;
+    border-right: none;
+    border-left: none; }
+    div .form-control:focus, div .form-select:focus, div.form-floating:focus {
+      background-color: #242434;
+      color: #D9C7E8;
+      outline: none;
+      box-shadow: none; }
+    div .form-control::placeholder, div .form-select::placeholder, div.form-floating::placeholder {
+      color: #D9C7E8; }
+  div.ratio {
+    margin-top: 5rem; }
+    @media all and (min-width: 768px) {
+      div.ratio iframe.mapa {
+        padding-left: 100px;
+        padding-right: 100px; } }
 
 .atrImg {
   width: 100px;
@@ -357,22 +375,19 @@ div {
     .title {
       font-size: 40px; } }
 
-.subtitle, .subtitleJuegos {
+.subtitle {
   color: #6C7C9C;
   text-align: center;
   font-size: 12px; }
   @media all and (min-width: 768px) and (max-width: 1024px) {
-    .subtitle, .subtitleJuegos {
+    .subtitle {
       font-size: 16px; } }
   @media all and (min-width: 1024px) {
-    .subtitle, .subtitleJuegos {
+    .subtitle {
       font-size: 20px; } }
 
 .frase {
   margin-top: auto; }
-
-.subtitleJuegos {
-  text-align: left; }
 
 span.name {
   padding-top: 10px;
