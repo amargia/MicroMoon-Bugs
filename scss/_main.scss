@@ -123,10 +123,7 @@ div {
 	&.rowDesktop {
 		display: grid;
 		grid-template-columns: repeat(1, 1fr);
-		@media all and (min-width: $bpoint-md) and (max-width: $bpoint-xl){
-			@include flexbox(space-between);
-		}
-		@media all and (min-width: $bpoint-xl){
+		@media all and (min-width: $bpoint-md){
 			@include flexbox(space-between);			
 		}
 	}
@@ -137,13 +134,8 @@ div {
 		flex-wrap: wrap;
 		margin-left: 5rem;
 		margin-right: 5rem;
-		@media all and (min-width: $bpoint-md) and (max-width: $bpoint-xl){
+		@media all and (min-width: $bpoint-md){
 			@include flexbox(space-evenly);
-			margin-left: 0;
-			margin-right: 0;
-		}
-		@media all and (min-width: $bpoint-xl){
-			@include flexbox(space-between);
 			margin-left: 0;
 			margin-right: 0;			
 		}

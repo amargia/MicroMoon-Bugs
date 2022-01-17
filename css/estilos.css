@@ -135,15 +135,7 @@ div {
   div.rowDesktop {
     display: grid;
     grid-template-columns: repeat(1, 1fr); }
-    @media all and (min-width: 768px) and (max-width: 1024px) {
-      div.rowDesktop {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        padding: 10px;
-        width: 100%; } }
-    @media all and (min-width: 1024px) {
+    @media all and (min-width: 768px) {
       div.rowDesktop {
         display: flex;
         flex-direction: row;
@@ -158,21 +150,11 @@ div {
     flex-wrap: wrap;
     margin-left: 5rem;
     margin-right: 5rem; }
-    @media all and (min-width: 768px) and (max-width: 1024px) {
+    @media all and (min-width: 768px) {
       div.rowDesktopEq {
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
-        flex-wrap: wrap;
-        padding: 10px;
-        width: 100%;
-        margin-left: 0;
-        margin-right: 0; } }
-    @media all and (min-width: 1024px) {
-      div.rowDesktopEq {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
         flex-wrap: wrap;
         padding: 10px;
         width: 100%;
