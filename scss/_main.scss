@@ -1,5 +1,6 @@
 body	{
 	font-family: 'Cultive Mono', monospace;
+	background-color: $bgColor;
 }
 .navbarBg {
 	background-color: #5A4669;
@@ -67,9 +68,6 @@ a {
 }
 div {
 	color: $colorSttl;
-	&#fondo {
-		background-color: $bgColor;
-	}	
 	&.caja {
 		width: 100%;
 		height: 50px;
@@ -274,36 +272,21 @@ div {
 		"."
 		".";
 		justify-items: center;
-		grid-row-gap: 20px;
+		grid-row-gap: 5px;
 		img {
-			width: 80%;
-			height: 80%;
-			object-fit: contain;
+			width: 90%;
+			height: 90%;
+			object-fit: scale-down;
 			border: 2px dashed #D9C7E8;
 			transition: all 300ms ease-in-out;
 			&.logo {
 				border: none;
 			}
 		}
-		@media all and (min-width: $bpoint-md) and (max-width: $bpoint-xl){
-			display: grid;
-			grid-template-areas:
-			". . ."
-			". logo ."
-			". . .";
-			justify-items: center;
-			grid-row-gap: 20px;
-			img {
-				&.logo {
-					grid-area: logo;
-					border: none;
-				}
-			}
-		}
-		@media all and (min-width: $bpoint-xl){
+		@media all and (min-width: $bpoint-md){
 			display: grid;
 			grid-template-columns: repeat(3, 1fr);
-			gap: 20px;
+			gap: 5px;
 			grid-template-areas:
 			". . ."
 			". logo ."
@@ -319,12 +302,7 @@ div {
 	}
 	.arte {
 		grid-column: span 1;
-		@media all and (min-width: $bpoint-md) and (max-width: $bpoint-xl){
-			grid-column: span 1;
-			@include medidaImgArte;
-			object-fit: scale-down;
-		}
-		@media all and (min-width: $bpoint-xl){
+		@media all and (min-width: $bpoint-md){
 			grid-column: span 1;
 			@include medidaImgArte;	
 		}
