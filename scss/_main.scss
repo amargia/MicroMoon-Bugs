@@ -89,30 +89,6 @@ div {
 		border-color: $colorTtl;
 		border-radius: 50px;
 	}
-	p {
-		&.izquierdaTitulo{
-			padding: 0.5rem;
-		}
-		&.top {
-			margin-top: 1.5rem;
-		}
-		&.topb {
-			@media all and (min-width: $bpoint-md) and (max-width: $bpoint-xl){
-				margin-top: 7rem;
-			}
-			@media all and (min-width: $bpoint-xl){
-				margin-top: 9rem;
-			}
-		}
-		&.topl {
-			@media all and (min-width: $bpoint-md) and (max-width: $bpoint-xl){
-				margin-top: 10rem;
-			}
-			@media all and (min-width: $bpoint-xl){
-				margin-top: 12rem;
-			}
-		}
-	}
 	&.medio{
 		max-height: 50%;
 		margin-top: 50px;
@@ -194,12 +170,8 @@ div {
 				border-color: $bgColor;
 				border: 5px solid;
 			}
-		}			
-		@media all and (min-width: $bpoint-md) and (max-width: $bpoint-xl){
-			width: 20rem;
-			margin-top: 4rem;	
 		}
-		@media all and (min-width: $bpoint-xl){
+		@media all and (min-width: $bpoint-md){
 			width: 20rem;
 			margin-top: 4rem;
 		}
@@ -233,6 +205,12 @@ div {
 	}
 	&.modal-content {
 		background-color: #5A4669;
+		.atrImg {
+			width: 100px;
+			height: 100px;
+			@include flexbox(center);
+			object-fit: scale-down;
+		}
 	}
 	&.cardJuegos { //*juegos
 		@media all and (min-width: $bpoint-md){
@@ -333,12 +311,6 @@ div {
 			}
 		}
 	}
-}
-.atrImg {
-	width: 100px;
-	height: 100px;
-	@include flexbox(center);
-	object-fit: scale-down;
 }
 .medioTitulo {
 	margin-bottom: 20px;

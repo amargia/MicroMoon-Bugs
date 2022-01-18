@@ -106,22 +106,6 @@ div {
     border-style: dashed;
     border-color: #D9C7E8;
     border-radius: 50px; }
-  div p.izquierdaTitulo {
-    padding: 0.5rem; }
-  div p.top {
-    margin-top: 1.5rem; }
-  @media all and (min-width: 768px) and (max-width: 1024px) {
-    div p.topb {
-      margin-top: 7rem; } }
-  @media all and (min-width: 1024px) {
-    div p.topb {
-      margin-top: 9rem; } }
-  @media all and (min-width: 768px) and (max-width: 1024px) {
-    div p.topl {
-      margin-top: 10rem; } }
-  @media all and (min-width: 1024px) {
-    div p.topl {
-      margin-top: 12rem; } }
   div.medio {
     max-height: 50%;
     margin-top: 50px; }
@@ -215,11 +199,7 @@ div {
       div.card .member:hover {
         border-color: #242434;
         border: 5px solid; }
-    @media all and (min-width: 768px) and (max-width: 1024px) {
-      div.card {
-        width: 20rem;
-        margin-top: 4rem; } }
-    @media all and (min-width: 1024px) {
+    @media all and (min-width: 768px) {
       div.card {
         width: 20rem;
         margin-top: 4rem; } }
@@ -246,6 +226,16 @@ div {
           background-color: #242434; }
   div.modal-content {
     background-color: #5A4669; }
+    div.modal-content .atrImg {
+      width: 100px;
+      height: 100px;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      flex-wrap: wrap;
+      padding: 10px;
+      width: 100%;
+      object-fit: scale-down; }
   @media all and (min-width: 768px) {
     div.cardJuegos {
       width: 35rem; } }
@@ -315,17 +305,6 @@ div {
       div.ratio iframe.mapa {
         padding-left: 100px;
         padding-right: 100px; } }
-
-.atrImg {
-  width: 100px;
-  height: 100px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  flex-wrap: wrap;
-  padding: 10px;
-  width: 100%;
-  object-fit: scale-down; }
 
 .medioTitulo {
   margin-bottom: 20px;
